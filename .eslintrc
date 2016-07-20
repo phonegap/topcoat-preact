@@ -1,0 +1,20 @@
+{
+  "extends": "airbnb",
+  "ecmaFeatures": {
+    "jsx": true,
+    "modules": true,
+  },
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true,
+  },
+  "rules": {
+    "spaced-comment": 0,
+    "no-console": 0,
+    "quotes": [2, "double"],
+    "react/prefer-es6-class": 0,
+    "react/jsx-curly-spacing": [2, "always"],
+    "no-unused-expressions": [2, { "allowShortCircuit": true }]
+  },
+}
