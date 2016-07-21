@@ -6,7 +6,6 @@ const TabBar = (props) => {
   const { full = false, ...rest } = props;
   const cx = classNames({
     full,
-    'pg-tab-bar': true,
     'topcoat-tab-bar': true,
   });
   const tabs = props.children.map(child => (

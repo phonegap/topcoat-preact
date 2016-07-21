@@ -9,7 +9,6 @@ const IconButton = (props) => {
     'topcoat-icon-button--large': large && !quiet,
     'topcoat-icon-button--quiet': quiet && !large,
     'topcoat-icon-button--large--quiet': large && quiet,
-    'pg-icon-button': true,
   });
   return (
     <Tappable
