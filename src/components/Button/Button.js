@@ -7,8 +7,8 @@ const Button = (props) => {
   const cx = classNames({
     full: props.full || false,
     'topcoat-button': !cta && !large,
+    'topcoat-button--quiet': !cta && !large && quiet,
     'topcoat-button--cta': cta && !large && !quiet,
-    'topcoat-button--cta--quiet': cta && quiet && !large,
     'topcoat-button--large': large && !cta && !quiet,
     'topcoat-button--large--cta': large && cta,
     'topcoat-button--large--quiet': large && quiet && !cta,
