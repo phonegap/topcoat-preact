@@ -1,6 +1,7 @@
 {
   "extends": "airbnb",
   "ecmaFeatures": {
+    "experimentalObjectRestSpread": true
     "jsx": true,
     "modules": true,
   },
@@ -9,10 +10,11 @@
     "node": true,
     "es6": true,
   },
+  "parser": "babel-eslint",
   "rules": {
     "spaced-comment": 0,
     "no-console": 0,
-    "quotes": [2, "double"],
+    "quotes": [2, "single"],
     "react/prefer-es6-class": 0,
     "react/jsx-curly-spacing": [2, "always"],
     "no-unused-expressions": [2, { "allowShortCircuit": true }]
