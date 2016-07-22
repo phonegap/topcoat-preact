@@ -3,7 +3,8 @@ import classNames from 'classnames';
 import Tappable from 'react-tappable';
 
 const Button = (props) => {
-  const { cta = false, large = false, quiet = false, ...rest } = props;
+  const { clickHandler = () => {},
+    cta = false, large = false, quiet = false, ...rest } = props;
   const cx = classNames({
     full: props.full || false,
     'topcoat-button': !cta && !large,
@@ -17,7 +18,7 @@ const Button = (props) => {
     <Tappable
       component="button"
       className={ cx }
-      onTap={ props.clickHandler }
+      onTap={ clickHandler }
       { ...rest }
     >
       { props.children || <span>&nbsp;</span> }

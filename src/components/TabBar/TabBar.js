@@ -3,7 +3,7 @@ import classNames from 'classnames';
 import Tappable from 'react-tappable';
 
 const TabBar = (props) => {
-  const { full = false, ...rest } = props;
+  const { full = false, clickHandler = () => {}, ...rest } = props;
   const cx = classNames({
     full,
     'topcoat-tab-bar': true,
@@ -14,7 +14,7 @@ const TabBar = (props) => {
       <Tappable
         component="button"
         className="topcoat-tab-bar__button"
-        onTap={ () => props.clickHandler(child.key) }
+        onTap={ () => clickHandler(child.key) }
       >
         { child }
       </Tappable>
