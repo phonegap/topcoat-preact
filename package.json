@@ -4,9 +4,9 @@
   "description": "React components implementing Topcoat components",
   "main": "dist/index.js",
   "scripts": {
-    "build": "babel src --out-dir dist && build-storybook -o gh-pages",
+    "build": "babel src --out-dir dist",
     "start": "start-storybook -p 9001",
-    "publish-pages": "git subtree push --prefix gh-pages origin gh-pages",
+    "publish-pages": "build-storybook -o gh-pages && git subtree push --prefix gh-pages origin gh-pages",
     "storybook": "start-storybook -p 9001",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
