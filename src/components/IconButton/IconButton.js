@@ -3,7 +3,8 @@ import classNames from 'classnames';
 import Tappable from 'react-tappable';
 
 const IconButton = (props) => {
-  const { large = false, quiet = false, ...rest } = props;
+  const { clickHandler = () => {},
+    large = false, quiet = false, ...rest } = props;
   const cx = classNames({
     'topcoat-icon-button': !quiet && !large,
     'topcoat-icon-button--large': large && !quiet,
@@ -14,7 +15,7 @@ const IconButton = (props) => {
     <Tappable
       component="button"
       className={ cx }
-      onTap={ props.clickHandler }
+      onTap={ clickHandler }
       { ...rest }
     >
       { props.children || <span className="topcoat-icon">&nbsp;</span> }
@@ -24,7 +25,7 @@ const IconButton = (props) => {
 
 IconButton.propTypes = {
   children: React.PropTypes.any,
-  clickHandler: React.PropTypes.func.isRequired,
+  clickHandler: React.PropTypes.func,
   large: React.PropTypes.bool,
   quiet: React.PropTypes.bool,
 };

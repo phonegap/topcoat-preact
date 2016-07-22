@@ -17,4 +17,11 @@ storiesOf('TabBar', module)
       <span key="☠️">☠️</span>
       <span key="⚡️">⚡️</span>
     </TabBar>
+  ))
+  .add('clickHandler', () => (
+    <TabBar name="clickHandler" clickHandler={ action('tapped') }>
+      <span key="one">One</span>
+      <span key="two">Two</span>
+      <span key="three">Three</span>
+    </TabBar>
   ));

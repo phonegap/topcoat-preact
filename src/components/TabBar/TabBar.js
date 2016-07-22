@@ -29,7 +29,7 @@ const TabBar = (props) => {
 
 TabBar.propTypes = {
   children: React.PropTypes.any,
-  clickHandler: React.PropTypes.func.isRequired,
+  clickHandler: React.PropTypes.func,
   full: React.PropTypes.bool,
   name: React.PropTypes.string.isRequired,
 };

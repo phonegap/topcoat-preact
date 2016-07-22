@@ -28,7 +28,7 @@ const Button = (props) => {
 
 Button.propTypes = {
   children: React.PropTypes.any,
-  clickHandler: React.PropTypes.func.isRequired,
+  clickHandler: React.PropTypes.func,
   cta: React.PropTypes.bool,
   full: React.PropTypes.bool,
   large: React.PropTypes.bool,
