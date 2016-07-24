@@ -1,5 +1,6 @@
 examples
 node_modules
+npm-debug.log
 gh-pages
 .eslintrc
 .editorconfig
