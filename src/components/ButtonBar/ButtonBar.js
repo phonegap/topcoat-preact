@@ -2,23 +2,26 @@ import React from 'react';
 import classNames from 'classnames';
 import Tappable from 'react-tappable';
 
-const TabBar = (props) => {
-  const { full = false, clickHandler = () => {}, ...rest } = props;
+const ButtonBar = (props) => {
+  const { clickHandler = () => {},
+    full = false, large = false, ...rest } = props;
+  const classNameModifier = large
+    ? '--large'
+    : '';
   const cx = classNames({
     full,
-    'topcoat-tab-bar': true,
+    'topcoat-button-bar': true,
   });
   const tabs = props.children.map(child => (
-    <label key={ child.key } className="topcoat-tab-bar__item">
-      <input type="radio" name={ props.name } />
+    <div key={ child.key } className="topcoat-button-bar__item">
       <Tappable
         component="button"
-        className="topcoat-tab-bar__button"
+        className={ `topcoat-button-bar__button${classNameModifier}` }
         onTap={ () => clickHandler(child.key) }
       >
         { child }
       </Tappable>
-    </label>
+    </div>
   ));
   return (
     <div className={ cx } { ...rest }>
@@ -27,11 +30,11 @@ const TabBar = (props) => {
   );
 };
 
-TabBar.propTypes = {
+ButtonBar.propTypes = {
   children: React.PropTypes.any,
   clickHandler: React.PropTypes.func,
   full: React.PropTypes.bool,
-  name: React.PropTypes.string.isRequired,
+  large: React.PropTypes.bool,
 };
 
-export default TabBar;
+export default ButtonBar;
