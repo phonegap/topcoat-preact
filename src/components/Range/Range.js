@@ -10,6 +10,8 @@ const Range = (props) => {
   return (<input type="range" className={ cx } { ...props } />);
 };
 
+Range.displayName = 'Range';
+
 Range.propTypes = {
   disabled: React.PropTypes.bool,
 };

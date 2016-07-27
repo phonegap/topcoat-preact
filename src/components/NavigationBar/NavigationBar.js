@@ -12,6 +12,8 @@ const NavigationBar = (props) => {
   );
 };
 
+NavigationBar.displayName = 'NavigationBar';
+
 NavigationBar.propTypes = {
   children: React.PropTypes.any,
 };
@@ -31,6 +33,8 @@ const NavigationBarTitle = (props) => {
     </div>
   );
 };
+
+NavigationBarTitle.displayName = 'NavigationBarTitle';
 
 NavigationBarTitle.propTypes = {
   center: React.PropTypes.bool,

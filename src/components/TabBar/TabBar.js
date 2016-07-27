@@ -27,6 +27,8 @@ const TabBar = (props) => {
   );
 };
 
+TabBar.displayName = 'TabBar';
+
 TabBar.propTypes = {
   children: React.PropTypes.any,
   clickHandler: React.PropTypes.func,

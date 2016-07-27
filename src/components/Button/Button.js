@@ -26,6 +26,8 @@ const Button = (props) => {
   );
 };
 
+Button.displayName = 'Button';
+
 Button.propTypes = {
   children: React.PropTypes.any,
   clickHandler: React.PropTypes.func,

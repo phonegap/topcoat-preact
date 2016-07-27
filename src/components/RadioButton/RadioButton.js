@@ -22,6 +22,8 @@ const RadioButton = (props) => {
   );
 };
 
+RadioButton.displayName = 'RadioButton';
+
 RadioButton.propTypes = {
   children: React.PropTypes.any,
   disabled: React.PropTypes.bool,
@@ -31,4 +33,3 @@ RadioButton.propTypes = {
 };
 
 export default RadioButton;
-

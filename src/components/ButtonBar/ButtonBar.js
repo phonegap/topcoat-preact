@@ -30,6 +30,8 @@ const ButtonBar = (props) => {
   );
 };
 
+ButtonBar.displayName = 'ButtonBar';
+
 ButtonBar.propTypes = {
   children: React.PropTypes.any,
   clickHandler: React.PropTypes.func,

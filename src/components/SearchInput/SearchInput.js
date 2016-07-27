@@ -16,6 +16,8 @@ const SearchInput = (props) => {
   );
 };
 
+SearchInput.displayName = 'SearchInput';
+
 SearchInput.propTypes = {
   large: React.PropTypes.bool,
 };

@@ -23,6 +23,8 @@ const IconButton = (props) => {
   );
 };
 
+IconButton.displayName = 'IconButton';
+
 IconButton.propTypes = {
   children: React.PropTypes.any,
   clickHandler: React.PropTypes.func,
