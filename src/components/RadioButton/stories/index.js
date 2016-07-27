@@ -8,9 +8,7 @@ storiesOf('RadioButton', module)
     <RadioButton name="left-label">Left label </RadioButton>
   ))
   .addWithInfo('right label', () => (
-    <div>
-      <RadioButton right name="right-label"> Right label</RadioButton>
-    </div>
+    <RadioButton right name="right-label"> Right label</RadioButton>
   ))
   .addWithInfo('no label', () => (
     <RadioButton name="no-label" />

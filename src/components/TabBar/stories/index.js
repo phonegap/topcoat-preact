@@ -4,7 +4,7 @@ import { storiesOf, action } from '@kadira/storybook';
 import TabBar from '../';
 
 storiesOf('TabBar', module)
-  .addWithInfo('default', () => (
+  .addWithInfo('default', 'Children must be provided with keys', () => (
     <TabBar name="default">
       <span key="one">One</span>
       <span key="two">Two</span>
