@@ -4,20 +4,20 @@ import { storiesOf } from '@kadira/storybook';
 import RadioButton from '../';
 
 storiesOf('RadioButton', module)
-  .add('left label', () => (
+  .addWithInfo('left label', () => (
     <RadioButton name="left-label">Left label </RadioButton>
   ))
-  .add('right label', () => (
+  .addWithInfo('right label', () => (
     <div>
       <RadioButton right name="right-label"> Right label</RadioButton>
     </div>
   ))
-  .add('no label', () => (
+  .addWithInfo('no label', () => (
     <RadioButton name="no-label" />
   ))
-  .add('emoji label', () => (
+  .addWithInfo('emoji label', () => (
     <RadioButton name="emoji-label">⚡️💀☠️✨ </RadioButton>
   ))
-  .add('disabled', () => (
+  .addWithInfo('disabled', () => (
     <RadioButton name="disabled" disabled>Disabled </RadioButton>
   ));

@@ -4,17 +4,17 @@ import { storiesOf } from '@kadira/storybook';
 import SearchInput from '../';
 
 storiesOf('SearchInput', module)
-  .add('basic', () => (
+  .addWithInfo('basic', () => (
     <SearchInput name="basic" />
   ))
-  .add('disabled', () => (
+  .addWithInfo('disabled', () => (
     <SearchInput name="disabled" disabled />
   ))
-  .add('large', () => (
+  .addWithInfo('large', () => (
     <div>
       <SearchInput name="large" large />
     </div>
   ))
-  .add('large disabled', () => (
+  .addWithInfo('large disabled', () => (
     <SearchInput name="large-disabled" disabled large />
   ));

@@ -5,9 +5,9 @@ import Range from '../';
 
 // @TODO why is the margin-top needed?
 storiesOf('Range', module)
-  .add('default', () => (
+  .addWithInfo('default', () => (
     <Range name="default" style={ { marginTop: '20px' } } />
   ))
-  .add('disabled', () => (
+  .addWithInfo('disabled', () => (
     <Range name="disabled" style={ { marginTop: '20px' } } disabled />
   ));

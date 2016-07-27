@@ -4,28 +4,28 @@ import { storiesOf, action } from '@kadira/storybook';
 import TabBar from '../';
 
 storiesOf('TabBar', module)
-  .add('default', () => (
+  .addWithInfo('default', () => (
     <TabBar name="default">
       <span key="one">One</span>
       <span key="two">Two</span>
       <span key="three">Three</span>
     </TabBar>
   ))
-  .add('emoji', () => (
+  .addWithInfo('emoji', () => (
     <TabBar name="emoji">
       <span key="💀">💀</span>
       <span key="☠️">☠️</span>
       <span key="⚡️">⚡️</span>
     </TabBar>
   ))
-  .add('full', () => (
+  .addWithInfo('full', () => (
     <TabBar name="full" full>
       <span key="one">One</span>
       <span key="two">Two</span>
       <span key="three">Three</span>
     </TabBar>
   ))
-  .add('clickHandler', () => (
+  .addWithInfo('clickHandler', () => (
     <TabBar name="clickHandler" clickHandler={ action('tapped') }>
       <span key="one">One</span>
       <span key="two">Two</span>

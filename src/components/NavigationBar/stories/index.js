@@ -4,40 +4,40 @@ import { storiesOf } from '@kadira/storybook';
 import { NavigationBar, NavigationBarTitle } from '../';
 
 storiesOf('NavigationBar', module)
-  .add('default', () => (
+  .addWithInfo('default', () => (
     <NavigationBar>
       <NavigationBarTitle>Header</NavigationBarTitle>
     </NavigationBar>
   ))
-  .add('empty', () => (
+  .addWithInfo('empty', () => (
     <NavigationBar />
   ))
-  .add('empty title', () => (
+  .addWithInfo('empty title', () => (
     <NavigationBar>
       <NavigationBarTitle />
     </NavigationBar>
   ))
-  .add('emoji', () => (
+  .addWithInfo('emoji', () => (
     <NavigationBar>
       <NavigationBarTitle>⚡️💀☠️💀⚡️</NavigationBarTitle>
     </NavigationBar>
   ))
-  .add('not full', () => (
+  .addWithInfo('not full', () => (
     <NavigationBar>
       <NavigationBarTitle full={ false }>Not Full</NavigationBarTitle>
     </NavigationBar>
   ))
-  .add('not centered', () => (
+  .addWithInfo('not centered', () => (
     <NavigationBar>
       <NavigationBarTitle center={ false }>Not Centered</NavigationBarTitle>
     </NavigationBar>
   ))
-  .add('not centered or full', () => (
+  .addWithInfo('not centered or full', () => (
     <NavigationBar>
       <NavigationBarTitle full={ false } center={ false }>Not Centered or Full</NavigationBarTitle>
     </NavigationBar>
   ))
-  .add('with IconButtons', () => (
+  .addWithInfo('with IconButtons', () => (
     <NavigationBar>
       <NavigationBarTitle>@TODO once there are IconButtons</NavigationBarTitle>
     </NavigationBar>

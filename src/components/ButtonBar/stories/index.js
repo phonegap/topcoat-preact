@@ -4,28 +4,28 @@ import { storiesOf, action } from '@kadira/storybook';
 import ButtonBar from '../';
 
 storiesOf('ButtonBar', module)
-  .add('default', () => (
+  .addWithInfo('default', () => (
     <ButtonBar>
       <span key="one">One</span>
       <span key="two">Two</span>
       <span key="three">Three</span>
     </ButtonBar>
   ))
-  .add('emoji', () => (
+  .addWithInfo('emoji', () => (
     <ButtonBar>
       <span key="💀">💀</span>
       <span key="☠️">☠️</span>
       <span key="⚡️">⚡️</span>
     </ButtonBar>
   ))
-  .add('clickHandler', () => (
+  .addWithInfo('clickHandler', () => (
     <ButtonBar clickHandler={ action('tapped') }>
       <span key="one">One</span>
       <span key="two">Two</span>
       <span key="three">Three</span>
     </ButtonBar>
   ))
-  .add('large', () => (
+  .addWithInfo('large', () => (
     <ButtonBar large>
       <span key="one">One</span>
       <span key="two">Two</span>

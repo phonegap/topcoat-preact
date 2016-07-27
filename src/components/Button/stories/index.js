@@ -4,48 +4,48 @@ import { storiesOf, action } from '@kadira/storybook';
 import Button from '../';
 
 storiesOf('Button', module)
-  .add('text', () => (
+  .addWithInfo('text', () => (
     <Button>Button</Button>
   ))
-  .add('emoji', () => (
+  .addWithInfo('emoji', () => (
     <Button>☠️✨💀⚡️💀✨☠️</Button>
   ))
-  .add('a clickHandler', () => (
+  .addWithInfo('a clickHandler', () => (
     <Button clickHandler={ action('tapped') }>Click Me</Button>
   ))
-  .add('no text (all defaults)', () => (
-    <Button></Button>
+  .addWithInfo('no text (all defaults)', () => (
+    <Button />
   ))
-  .add('disabled', () => (
+  .addWithInfo('disabled', () => (
     <Button disabled>Button</Button>
   ))
-  .add('quiet', () => (
+  .addWithInfo('quiet', () => (
     <Button quiet>Button</Button>
   ))
-  .add('disabled quiet', () => (
+  .addWithInfo('disabled quiet', () => (
     <Button quiet disabled>Button</Button>
   ))
-  .add('cta', () => (
+  .addWithInfo('cta', () => (
     <Button cta>Button</Button>
   ))
-  .add('disabled cta', () => (
+  .addWithInfo('disabled cta', () => (
     <Button cta disabled>Button</Button>
   ))
-  .add('large', () => (
+  .addWithInfo('large', () => (
     <Button large>Button</Button>
   ))
-  .add('disabled large', () => (
+  .addWithInfo('disabled large', () => (
     <Button large disabled>Button</Button>
   ))
-  .add('large quiet', () => (
+  .addWithInfo('large quiet', () => (
     <Button large quiet>Button</Button>
   ))
-  .add('disabled large quiet', () => (
+  .addWithInfo('disabled large quiet', () => (
     <Button large quiet disabled>Button</Button>
   ))
-  .add('large cta', () => (
+  .addWithInfo('large cta', () => (
     <Button large cta>Button</Button>
   ))
-  .add('disabled large cta', () => (
+  .addWithInfo('disabled large cta', () => (
     <Button large cta disabled>Button</Button>
   ));
