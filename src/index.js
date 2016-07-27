@@ -1,5 +1,19 @@
 import Button from './components/Button';
+import ButtonBar from './components/ButtonBar';
 import IconButton from './components/IconButton';
+import NavigationBar from './components/NavigationBar';
+import RadioButton from './components/RadioButton';
+import Range from './components/Range';
+import SearchInput from './components/SearchInput';
 import TabBar from './components/TabBar';
 
-export { Button, IconButton, TabBar };
+export {
+  Button,
+  ButtonBar,
+  IconButton,
+  NavigationBar,
+  RadioButton,
+  Range,
+  SearchInput,
+  TabBar,
+};
