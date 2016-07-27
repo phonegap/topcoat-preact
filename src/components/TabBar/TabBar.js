@@ -13,7 +13,7 @@ const TabBar = (props) => {
       <input type="radio" name={ props.name } />
       <Tappable
         component="button"
-        className="topcoat-tab-bar__button"
+        className="topcoat-tab-bar__button full"
         onTap={ () => clickHandler(child.key) }
       >
         { child }

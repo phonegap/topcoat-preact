@@ -4,7 +4,7 @@ import { storiesOf } from '@kadira/storybook';
 import { NavigationBar, NavigationBarTitle } from '../';
 
 storiesOf('NavigationBar', module)
-  .add('basic', () => (
+  .add('default', () => (
     <NavigationBar>
       <NavigationBarTitle>Header</NavigationBarTitle>
     </NavigationBar>
