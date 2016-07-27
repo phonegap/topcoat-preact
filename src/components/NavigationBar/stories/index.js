@@ -1,25 +1,44 @@
 import React from 'react';
 import { storiesOf } from '@kadira/storybook';
 
-import NavigationBar from '../';
+import { NavigationBar, NavigationBarTitle } from '../';
 
 storiesOf('NavigationBar', module)
   .add('basic', () => (
-    <NavigationBar>Header</NavigationBar>
+    <NavigationBar>
+      <NavigationBarTitle>Header</NavigationBarTitle>
+    </NavigationBar>
   ))
   .add('empty', () => (
     <NavigationBar />
   ))
-  .add('emoji', () => (
-    <NavigationBar>⚡️💀☠️💀⚡️</NavigationBar>
-  ))
-  .add('full children', () => (
+  .add('empty title', () => (
     <NavigationBar>
-      <div className="topcoat-navigation-bar__item center full">
-        <h1 className="topcoat-navigation-bar__title">Specified Header</h1>
-      </div>
+      <NavigationBarTitle />
+    </NavigationBar>
+  ))
+  .add('emoji', () => (
+    <NavigationBar>
+      <NavigationBarTitle>⚡️💀☠️💀⚡️</NavigationBarTitle>
+    </NavigationBar>
+  ))
+  .add('not full', () => (
+    <NavigationBar>
+      <NavigationBarTitle full={ false }>Not Full</NavigationBarTitle>
+    </NavigationBar>
+  ))
+  .add('not centered', () => (
+    <NavigationBar>
+      <NavigationBarTitle center={ false }>Not Centered</NavigationBarTitle>
+    </NavigationBar>
+  ))
+  .add('not centered or full', () => (
+    <NavigationBar>
+      <NavigationBarTitle full={ false } center={ false }>Not Centered or Full</NavigationBarTitle>
     </NavigationBar>
   ))
   .add('with IconButtons', () => (
-    <NavigationBar>@TODO once there are IconButtons</NavigationBar>
+    <NavigationBar>
+      <NavigationBarTitle>@TODO once there are IconButtons</NavigationBarTitle>
+    </NavigationBar>
   ));

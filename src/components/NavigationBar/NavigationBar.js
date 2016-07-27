@@ -5,26 +5,37 @@ const NavigationBar = (props) => {
   const cx = classNames({
     'topcoat-navigation-bar': true,
   });
-  const children = props.children && props.children.count > 1 ? props.children :
-    (<div className="topcoat-navigation-bar__item center full">
-      <h1 className="topcoat-navigation-bar__title">
-        { props.children || <span>&nbsp;</span> }
-      </h1>
-    </div>);
   return (
     <div className={ cx }>
-      { children }
+      { props.children || <NavigationBarTitle>&nbsp;</NavigationBarTitle> }
     </div>
   );
 };
 
 NavigationBar.propTypes = {
   children: React.PropTypes.any,
-  clickHandler: React.PropTypes.func,
-  cta: React.PropTypes.bool,
-  full: React.PropTypes.bool,
-  large: React.PropTypes.bool,
-  quiet: React.PropTypes.bool,
 };
 
-export default NavigationBar;
+const NavigationBarTitle = (props) => {
+  const { full = true, center = true, ...rest } = props;
+  const cx = classNames({
+    full,
+    center,
+    'topcoat-navigation-bar__item': true,
+  });
+  return (
+    <div className={ cx } { ...rest }>
+      <h1 className="topcoat-navigation-bar__title">
+        { props.children || <span>&nbsp;</span> }
+      </h1>
+    </div>
+  );
+};
+
+NavigationBarTitle.propTypes = {
+  center: React.PropTypes.bool,
+  children: React.PropTypes.any,
+  full: React.PropTypes.bool,
+};
+
+export { NavigationBar, NavigationBarTitle };
