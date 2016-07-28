@@ -18,7 +18,9 @@ const IconButton = (props) => {
       onTap={ clickHandler }
       { ...rest }
     >
-      { props.children || <span className="topcoat-icon">&nbsp;</span> }
+      <span className="topcoat-icon">
+        { props.children }
+      </span>
     </Tappable>
   );
 };

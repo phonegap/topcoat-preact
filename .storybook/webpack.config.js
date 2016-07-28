@@ -18,6 +18,10 @@ const config = {
         loader: cssLoaders.join('!'),
         includes: [PATHS.src, PATHS.node_modules],
       },
+      {
+        test: /\.svg$/,
+        loader: 'babel?presets[]=es2015,presets[]=react!svg-react'
+      },
     ],
   },
 };

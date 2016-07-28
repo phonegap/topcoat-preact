@@ -16,10 +16,10 @@ React components implementing [Topcoat][topcoat] [components][topcoat-demos]
 - [x] Call To Action Button
 - [x] Large Call To Action Button
 - [x] Checkbox
-- [ ] Icon Button
-- [ ] Quiet Icon Button
-- [ ] Large Icon Button
-- [ ] Large Quiet Icon Button
+- [x] Icon Button
+- [x] Quiet Icon Button
+- [x] Large Icon Button
+- [x] Large Quiet Icon Button
 - [ ] List
 - [x] Navigation Bar
 - [x] Notification
