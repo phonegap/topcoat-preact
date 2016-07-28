@@ -15,6 +15,7 @@ function loadStories() {
   require('../src/components/SearchInput/stories');
   require('../src/components/Switch/stories');
   require('../src/components/TabBar/stories');
+  require('../src/components/TextInput/stories');
 }
 
 configure(loadStories, module);

@@ -8,6 +8,7 @@ import Range from './components/Range';
 import SearchInput from './components/SearchInput';
 import Switch from './components/Switch';
 import TabBar from './components/TabBar';
+import TextInput from './components/TextInput';
 
 export {
   Button,
@@ -20,4 +21,5 @@ export {
   SearchInput,
   Switch,
   TabBar,
+  TextInput,
 };

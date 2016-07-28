@@ -29,8 +29,8 @@ React components implementing [Topcoat][topcoat] [components][topcoat-demos]
 - [x] Large Search Input
 - [x] Switch
 - [x] Tab Bar
-- [ ] Text input
-- [ ] Large Text Input
+- [x] Text input
+- [x] Large Text Input
 - [ ] Textarea
 - [ ] Large Textarea
 
