@@ -31,8 +31,8 @@ React components implementing [Topcoat][topcoat] [components][topcoat-demos]
 - [x] Tab Bar
 - [x] Text input
 - [x] Large Text Input
-- [ ] Textarea
-- [ ] Large Textarea
+- [x] Textarea
+- [x] Large Textarea
 
 
 [topcoat]: http://topcoat.io/
