@@ -6,6 +6,7 @@ import NavigationBar from './components/NavigationBar';
 import RadioButton from './components/RadioButton';
 import Range from './components/Range';
 import SearchInput from './components/SearchInput';
+import Switch from './components/Switch';
 import TabBar from './components/TabBar';
 
 export {
@@ -17,5 +18,6 @@ export {
   RadioButton,
   Range,
   SearchInput,
+  Switch,
   TabBar,
 };
