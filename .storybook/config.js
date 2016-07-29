@@ -10,6 +10,7 @@ function loadStories() {
   require('../src/components/ButtonBar/stories');
   require('../src/components/Checkbox/stories');
   require('../src/components/IconButton/stories');
+  require('../src/components/List/stories');
   require('../src/components/NavigationBar/stories');
   require('../src/components/Notification/stories');
   require('../src/components/Range/stories');

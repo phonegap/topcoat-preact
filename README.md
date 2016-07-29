@@ -20,7 +20,7 @@ React components implementing [Topcoat][topcoat] [components][topcoat-demos]
 - [x] Quiet Icon Button
 - [x] Large Icon Button
 - [x] Large Quiet Icon Button
-- [ ] List
+- [x] List
 - [x] Navigation Bar
 - [x] Notification
 - [x] Radio Button
