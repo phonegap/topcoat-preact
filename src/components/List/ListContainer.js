@@ -6,7 +6,7 @@ const ListContainer = (props) => {
     'topcoat-list__container': true,
   });
   return (
-    <ul className={ cx }>
+    <ul className={ cx } { ...props }>
       { props.children }
     </ul>
   );

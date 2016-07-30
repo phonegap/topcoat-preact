@@ -6,7 +6,7 @@ const ListHeader = (props) => {
     'topcoat-list__header': true,
   });
   return (
-    <h3 className={ cx }>
+    <h3 className={ cx } { ...props }>
       { props.children || <span>&nbsp;</span> }
     </h3>
   );
