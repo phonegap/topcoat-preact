@@ -13,6 +13,9 @@ storiesOf('Button', module)
   .addWithInfo('a clickHandler', () => (
     <Button clickHandler={ action('tapped') }>Click Me</Button>
   ))
+  .addWithInfo('a disabled clickHandler', () => (
+    <Button disabled clickHandler={ action('tapped') }>Click Me</Button>
+  ))
   .addWithInfo('no text (all defaults)', () => (
     <Button />
   ))
