@@ -3,7 +3,7 @@ import infoAddon from '@kadira/react-storybook-addon-info';
 
 setAddon(infoAddon);
 
-import './topcoat-0.8.0/css/topcoat-mobile-light.css';
+import 'topcoat/css/topcoat-mobile-light.css';
 
 function loadStories() {
   require('../src/components/Button/stories');

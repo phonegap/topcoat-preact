@@ -42,12 +42,13 @@
     "sinon": "^1.17.5",
     "style-loader": "^0.13.1",
     "svg-react-loader": "^0.3.6",
+    "topcoat": "^0.7.5",
     "webpack": "^1.13.1"
   },
   "dependencies": {
     "classnames": "^2.2.5",
     "react": "^15.2.1",
     "react-dom": "^15.2.1",
-    "react-tappable": "^0.8.1"
+    "react-tappable": "^0.8.3"
   }
 }
