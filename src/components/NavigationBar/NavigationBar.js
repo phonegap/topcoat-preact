@@ -8,7 +8,7 @@ const NavigationBar = (props) => {
     'topcoat-navigation-bar': true,
   });
   return (
-    <div className={ cx }>
+    <div className={ cx } { ...props }>
       { props.children || <NavigationBarTitle>&nbsp;</NavigationBarTitle> }
     </div>
   );

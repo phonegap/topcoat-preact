@@ -4,9 +4,9 @@ import Tappable from 'react-tappable';
 
 const Button = (props) => {
   const { clickHandler = () => {},
-    cta = false, large = false, quiet = false, ...rest } = props;
+    cta = false, full = false, large = false, quiet = false, ...rest } = props;
   const cx = classNames({
-    full: props.full || false,
+    full,
     'topcoat-button': !quiet && !cta && !large,
     'topcoat-button--quiet': !cta && !large && quiet,
     'topcoat-button--cta': cta && !large && !quiet,
