@@ -13,6 +13,7 @@
   },
   "parser": "babel-eslint",
   "rules": {
+    "no-return-assign": 1,
     "spaced-comment": 0,
     "no-console": 0,
     "quotes": [2, "single"],
