@@ -1,4 +1,4 @@
-import React from 'react';
+import { h } from 'preact';
 import classNames from 'classnames';
 
 const List = (props) => {
@@ -13,9 +13,5 @@ const List = (props) => {
 };
 
 List.displayName = 'List';
-
-List.propTypes = {
-  children: React.PropTypes.any,
-};
 
 export default List;

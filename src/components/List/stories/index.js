@@ -1,4 +1,4 @@
-import React from 'react';
+import { h } from 'preact';
 import { action, storiesOf } from '@kadira/storybook';
 
 import { List, ListContainer, ListHeader, ListItem } from '../';

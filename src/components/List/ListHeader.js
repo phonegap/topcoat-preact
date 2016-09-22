@@ -1,4 +1,4 @@
-import React from 'react';
+import { h } from 'preact';
 import classNames from 'classnames';
 
 const ListHeader = (props) => {
@@ -13,9 +13,5 @@ const ListHeader = (props) => {
 };
 
 ListHeader.displayName = 'ListHeader';
-
-ListHeader.propTypes = {
-  children: React.PropTypes.any,
-};
 
 export default ListHeader;

@@ -11,6 +11,13 @@ const cssLoaders = [
 ];
 
 const config = {
+  resolve: {
+    alias: {
+      react: 'preact-compat',
+      'react-dom': 'preact-compat',
+      'react-addons-create-fragment': 'preact-compat',
+    },
+  },
   module: {
     loaders: [
       {
@@ -20,7 +27,7 @@ const config = {
       },
       {
         test: /\.svg$/,
-        loader: 'babel?presets[]=es2015,presets[]=react!svg-react'
+        loader: 'babel?presets[]=es2015,presets[]=react!svg-react',
       },
     ],
   },

@@ -1,4 +1,4 @@
-import React from 'react';
+import { h } from 'preact';
 import classNames from 'classnames';
 import Tappable from 'react-tappable';
 
@@ -28,12 +28,5 @@ const TabBar = (props) => {
 };
 
 TabBar.displayName = 'TabBar';
-
-TabBar.propTypes = {
-  children: React.PropTypes.any,
-  clickHandler: React.PropTypes.func,
-  full: React.PropTypes.bool,
-  name: React.PropTypes.string.isRequired,
-};
 
 export default TabBar;

@@ -1,4 +1,4 @@
-import React from 'react';
+import { h } from 'preact';
 import classNames from 'classnames';
 
 const Notification = (props) => {
@@ -12,9 +12,5 @@ const Notification = (props) => {
 };
 
 Notification.displayName = 'Notification';
-
-Notification.propTypes = {
-  count: React.PropTypes.number,
-};
 
 export default Notification;

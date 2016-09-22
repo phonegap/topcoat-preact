@@ -1,4 +1,4 @@
-import React from 'react';
+import { h } from 'preact';
 import classNames from 'classnames';
 import Tappable from 'react-tappable';
 
@@ -23,9 +23,5 @@ const ListItem = (props) => {
 };
 
 ListItem.displayName = 'ListItem';
-
-ListItem.propTypes = {
-  children: React.PropTypes.any,
-};
 
 export default ListItem;

@@ -1,15 +1,7 @@
-import React from 'react';
+import { Component, h } from 'preact';
 import classNames from 'classnames';
 
-export default React.createClass({
-
-  displayName: 'TextInput',
-
-  propTypes: {
-    full: React.PropTypes.bool,
-    large: React.PropTypes.bool,
-  },
-
+export default class TextInput extends Component {
   render() {
     const { full = false, large = false, ...rest } = this.props;
     const cx = classNames({
@@ -19,11 +11,11 @@ export default React.createClass({
     });
     return (
       <input
-        ref="input"
+        ref={ (node) => 'input' }
         type="text"
         className={ cx }
         { ...rest }
       />
     );
-  },
-});
+  }
+}

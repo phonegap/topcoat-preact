@@ -1,4 +1,4 @@
-import React from 'react';
+import { h } from 'preact';
 import classNames from 'classnames';
 
 import NavigationBarTitle from './NavigationBarTitle';
@@ -15,9 +15,5 @@ const NavigationBar = (props) => {
 };
 
 NavigationBar.displayName = 'NavigationBar';
-
-NavigationBar.propTypes = {
-  children: React.PropTypes.any,
-};
 
 export default NavigationBar;
