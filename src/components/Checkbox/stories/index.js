@@ -1,4 +1,4 @@
-import React from 'react';
+import { h } from 'preact';
 import { storiesOf } from '@kadira/storybook';
 
 import Checkbox from '../';

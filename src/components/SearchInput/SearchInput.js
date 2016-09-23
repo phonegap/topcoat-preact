@@ -1,14 +1,7 @@
-import React from 'react';
+import { Component, h } from 'preact';
 import classNames from 'classnames';
 
-export default React.createClass({
-
-  displayName: 'SearchInput',
-
-  propTypes: {
-    large: React.PropTypes.bool,
-  },
-
+export default class SearchInput extends Component {
   render() {
     // @TODO - search inputs should be managed
     //   ...or at least be able to be managed
@@ -21,11 +14,11 @@ export default React.createClass({
     });
     return (
       <input
-        ref="search"
+        ref={ (node) => 'search' }
         type="search"
         placeholder="search"
         className={ cx } { ...rest }
       />
     );
-  },
-});
+  }
+}

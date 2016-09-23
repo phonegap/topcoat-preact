@@ -1,4 +1,4 @@
-import React from 'react';
+import { h } from 'preact';
 import classNames from 'classnames';
 import Tappable from 'react-tappable';
 
@@ -31,12 +31,5 @@ const ButtonBar = (props) => {
 };
 
 ButtonBar.displayName = 'ButtonBar';
-
-ButtonBar.propTypes = {
-  children: React.PropTypes.any,
-  clickHandler: React.PropTypes.func,
-  full: React.PropTypes.bool,
-  large: React.PropTypes.bool,
-};
 
 export default ButtonBar;

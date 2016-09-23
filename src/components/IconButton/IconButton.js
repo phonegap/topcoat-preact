@@ -1,4 +1,4 @@
-import React from 'react';
+import { h } from 'preact';
 import classNames from 'classnames';
 import Tappable from 'react-tappable';
 
@@ -26,12 +26,5 @@ const IconButton = (props) => {
 };
 
 IconButton.displayName = 'IconButton';
-
-IconButton.propTypes = {
-  children: React.PropTypes.any,
-  clickHandler: React.PropTypes.func,
-  large: React.PropTypes.bool,
-  quiet: React.PropTypes.bool,
-};
 
 export default IconButton;

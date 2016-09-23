@@ -1,4 +1,4 @@
-import React from 'react';
+import { h } from 'preact';
 import classNames from 'classnames';
 
 // @TODO - text areas should be managed
@@ -17,10 +17,5 @@ const TextArea = (props) => {
 };
 
 TextArea.displayName = 'TextArea';
-
-TextArea.propTypes = {
-  children: React.PropTypes.any,
-  large: React.PropTypes.bool,
-};
 
 export default TextArea;

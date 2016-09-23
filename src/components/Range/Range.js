@@ -1,4 +1,4 @@
-import React from 'react';
+import { h } from 'preact';
 import classNames from 'classnames';
 
 // @TODO - range inputs should be managed
@@ -11,9 +11,5 @@ const Range = (props) => {
 };
 
 Range.displayName = 'Range';
-
-Range.propTypes = {
-  disabled: React.PropTypes.bool,
-};
 
 export default Range;

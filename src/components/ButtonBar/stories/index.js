@@ -1,4 +1,4 @@
-import React from 'react';
+import { h } from 'preact';
 import { storiesOf, action } from '@kadira/storybook';
 
 import ButtonBar from '../';

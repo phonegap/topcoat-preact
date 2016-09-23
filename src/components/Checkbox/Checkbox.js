@@ -1,4 +1,4 @@
-import React from 'react';
+import { h } from 'preact';
 import classNames from 'classnames';
 
 // @TODO - checkboxes should be managed
@@ -25,12 +25,5 @@ const Checkbox = (props) => {
 };
 
 Checkbox.displayName = 'Checkbox';
-
-Checkbox.propTypes = {
-  children: React.PropTypes.any,
-  description: React.PropTypes.string,
-  disabled: React.PropTypes.bool,
-  id: React.PropTypes.string.isRequired,
-};
 
 export default Checkbox;

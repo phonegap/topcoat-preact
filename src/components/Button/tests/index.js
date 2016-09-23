@@ -1,4 +1,4 @@
-import React from 'react';
+import { h } from 'preact';
 import expect from 'expect';
 import { mount, shallow } from 'enzyme';
 import { spy } from 'sinon';

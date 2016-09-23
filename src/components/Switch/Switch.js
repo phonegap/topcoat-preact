@@ -1,4 +1,4 @@
-import React from 'react';
+import { h } from 'preact';
 import classNames from 'classnames';
 
 // @TODO - switches should be managed
@@ -24,10 +24,5 @@ const Switch = (props) => {
 };
 
 Switch.displayName = 'Switch';
-
-Switch.propTypes = {
-  checked: React.PropTypes.bool,
-  disabled: React.PropTypes.bool,
-};
 
 export default Switch;

@@ -1,4 +1,4 @@
-import React from 'react';
+import { h } from 'preact';
 import classNames from 'classnames';
 import Tappable from 'react-tappable';
 
@@ -27,14 +27,5 @@ const Button = (props) => {
 };
 
 Button.displayName = 'Button';
-
-Button.propTypes = {
-  children: React.PropTypes.any,
-  clickHandler: React.PropTypes.func,
-  cta: React.PropTypes.bool,
-  full: React.PropTypes.bool,
-  large: React.PropTypes.bool,
-  quiet: React.PropTypes.bool,
-};
 
 export default Button;

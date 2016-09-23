@@ -1,4 +1,4 @@
-import React from 'react';
+import { h } from 'preact';
 import classNames from 'classnames';
 
 // @TODO - radio buttons should be managed
@@ -23,13 +23,5 @@ const RadioButton = (props) => {
 };
 
 RadioButton.displayName = 'RadioButton';
-
-RadioButton.propTypes = {
-  children: React.PropTypes.any,
-  disabled: React.PropTypes.bool,
-  left: React.PropTypes.bool,
-  name: React.PropTypes.string.isRequired,
-  right: React.PropTypes.bool,
-};
 
 export default RadioButton;

@@ -1,4 +1,4 @@
-import React from 'react';
+import { h } from 'preact';
 import classNames from 'classnames';
 
 const NavigationBarTitle = (props) => {
@@ -18,11 +18,5 @@ const NavigationBarTitle = (props) => {
 };
 
 NavigationBarTitle.displayName = 'NavigationBarTitle';
-
-NavigationBarTitle.propTypes = {
-  center: React.PropTypes.bool,
-  children: React.PropTypes.any,
-  full: React.PropTypes.bool,
-};
 
 export default NavigationBarTitle;
