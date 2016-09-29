@@ -11,7 +11,7 @@ export default class TextInput extends Component {
     });
     return (
       <input
-        ref={ c => this.input = c }
+        ref={ (node) => { this.input = node; } }
         type="text"
         className={ cx }
         { ...rest }

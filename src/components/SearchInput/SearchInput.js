@@ -14,7 +14,7 @@ export default class SearchInput extends Component {
     });
     return (
       <input
-        ref={ (node) => 'search' }
+        ref={ (node) => { this.searchInput = node; } }
         type="search"
         placeholder="search"
         className={ cx } { ...rest }
