@@ -1,4 +1,4 @@
-import { Component, h } from 'preact';
+import { h, Component } from 'preact';
 import classNames from 'classnames';
 
 export default class TextInput extends Component {
@@ -11,7 +11,7 @@ export default class TextInput extends Component {
     });
     return (
       <input
-        ref={ (node) => 'input' }
+        ref={ c => this.input = c }
         type="text"
         className={ cx }
         { ...rest }
