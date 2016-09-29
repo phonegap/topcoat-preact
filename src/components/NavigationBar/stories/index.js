@@ -1,12 +1,14 @@
 import { h } from 'preact';
 import { storiesOf } from '@kadira/storybook';
 
-import { NavigationBar, NavigationBarTitle } from '../';
+import { NavigationBar, NavigationBarItem, NavigationBarTitle } from '../';
 
 storiesOf('NavigationBar', module)
   .addWithInfo('default', () => (
     <NavigationBar>
-      <NavigationBarTitle>Header</NavigationBarTitle>
+      <NavigationBarItem>
+        <NavigationBarTitle>Header</NavigationBarTitle>
+      </NavigationBarItem>
     </NavigationBar>
   ))
   .addWithInfo('empty', () => (
@@ -19,26 +21,39 @@ storiesOf('NavigationBar', module)
   ))
   .addWithInfo('emoji', () => (
     <NavigationBar>
-      <NavigationBarTitle>⚡️💀☠️💀⚡️</NavigationBarTitle>
+      <NavigationBarItem>
+        <NavigationBarTitle>⚡️💀☠️💀⚡️</NavigationBarTitle>
+      </NavigationBarItem>
     </NavigationBar>
   ))
-  .addWithInfo('not full', () => (
+  .addWithInfo('full centred', () => (
     <NavigationBar>
-      <NavigationBarTitle full={ false }>Not Full</NavigationBarTitle>
+      <NavigationBarItem full center>
+        <NavigationBarTitle>Full Centered Title</NavigationBarTitle>
+      </NavigationBarItem>
     </NavigationBar>
   ))
-  .addWithInfo('not centered', () => (
+  .addWithInfo('not centred', () => (
     <NavigationBar>
-      <NavigationBarTitle center={ false }>Not Centered</NavigationBarTitle>
-    </NavigationBar>
-  ))
-  .addWithInfo('not centered or full', () => (
-    <NavigationBar>
-      <NavigationBarTitle full={ false } center={ false }>Not Centered or Full</NavigationBarTitle>
+      <NavigationBarItem full>
+        <NavigationBarTitle>Full Not Centered Title</NavigationBarTitle>
+      </NavigationBarItem>
     </NavigationBar>
   ))
   .addWithInfo('with IconButtons', () => (
     <NavigationBar>
-      <NavigationBarTitle>@TODO once there are IconButtons</NavigationBarTitle>
+      <NavigationBarItem quarter left>
+        <button className="topcoat-icon-button">
+          <span className="topcoat-icon" />
+        </button>
+      </NavigationBarItem>
+      <NavigationBarItem half center>
+        <NavigationBarTitle>Centred Title</NavigationBarTitle>
+      </NavigationBarItem>
+      <NavigationBarItem quarter right>
+        <button className="topcoat-icon-button">
+          <span className="topcoat-icon" />
+        </button>
+      </NavigationBarItem>
     </NavigationBar>
   ));

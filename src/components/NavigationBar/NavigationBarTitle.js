@@ -1,19 +1,16 @@
 import { h } from 'preact';
 import classNames from 'classnames';
 
+import { NavigationBarItem } from './NavigationBarItem';
+
 const NavigationBarTitle = (props) => {
-  const { full = true, center = true, ...rest } = props;
   const cx = classNames({
-    full,
-    center,
-    'topcoat-navigation-bar__item': true,
+    'topcoat-navigation-bar__title': true,
   });
   return (
-    <div className={ cx } { ...rest }>
-      <h1 className="topcoat-navigation-bar__title">
-        { props.children || <span>&nbsp;</span> }
-      </h1>
-    </div>
+    <h1 className={ cx } { ...props }>
+      { props.children || <span>&nbsp;</span> }
+    </h1>
   );
 };
 
