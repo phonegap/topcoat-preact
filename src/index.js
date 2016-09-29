@@ -4,7 +4,7 @@ import Checkbox from './components/Checkbox';
 import IconButton from './components/IconButton';
 import { List, ListContainer, ListHeader, ListItem }
   from './components/List';
-import { NavigationBar, NavigationBarTitle } from './components/NavigationBar';
+import { NavigationBar, NavigationBarItem, NavigationBarTitle } from './components/NavigationBar';
 import Notification from './components/Notification';
 import RadioButton from './components/RadioButton';
 import Range from './components/Range';
@@ -24,6 +24,7 @@ export {
   ListHeader,
   ListItem,
   NavigationBar,
+  NavigationBarItem,
   NavigationBarTitle,
   Notification,
   RadioButton,
