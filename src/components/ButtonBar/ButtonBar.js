@@ -1,6 +1,5 @@
 import { h } from 'preact';
 import classNames from 'classnames';
-import Tappable from 'react-tappable';
 
 const ButtonBar = (props) => {
   const { clickHandler = () => {},

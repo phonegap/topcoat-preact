@@ -1,6 +1,5 @@
 import { h } from 'preact';
 import classNames from 'classnames';
-import Tappable from 'react-tappable';
 
 const TabBar = (props) => {
   const { full = false, clickHandler = () => {}, ...rest } = props;
