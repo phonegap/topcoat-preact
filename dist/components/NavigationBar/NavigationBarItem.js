@@ -1,0 +1,57 @@
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+var _preact = require('preact');
+
+var _classnames = require('classnames');
+
+var _classnames2 = _interopRequireDefault(_classnames);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
+
+var NavigationBarItem = function NavigationBarItem(props) {
+  var _props$full = props.full;
+  var full = _props$full === undefined ? false : _props$full;
+  var _props$center = props.center;
+  var center = _props$center === undefined ? false : _props$center;
+  var _props$left = props.left;
+  var left = _props$left === undefined ? false : _props$left;
+  var _props$right = props.right;
+  var right = _props$right === undefined ? false : _props$right;
+  var _props$half = props.half;
+  var half = _props$half === undefined ? false : _props$half;
+  var _props$quarter = props.quarter;
+  var quarter = _props$quarter === undefined ? false : _props$quarter;
+
+  var rest = _objectWithoutProperties(props, ['full', 'center', 'left', 'right', 'half', 'quarter']);
+
+  var cx = (0, _classnames2.default)({
+    full: full,
+    center: center,
+    left: left,
+    half: half,
+    quarter: quarter,
+    right: right,
+    'topcoat-navigation-bar__item': true
+  });
+  return (0, _preact.h)(
+    'div',
+    _extends({ className: cx }, rest),
+    props.children || (0, _preact.h)(
+      'span',
+      null,
+      '\xA0'
+    )
+  );
+};
+
+NavigationBarItem.displayName = 'NavigationBarItem';
+
+exports.default = NavigationBarItem;

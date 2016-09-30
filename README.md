@@ -1,7 +1,7 @@
-Topcoat React Components
+Topcoat Preact Components
 ------------------------
 
-React components implementing [Topcoat][topcoat] [components][topcoat-demos]
+Preact components implementing [Topcoat][topcoat] [components][topcoat-demos]
 
 [Demos and API:][storybook]
 

@@ -1,7 +1,7 @@
 {
-  "name": "phonegap-topcoat-react",
-  "version": "0.1.0",
-  "description": "React components implementing Topcoat components",
+  "name": "topcoat-preact",
+  "version": "0.2.0",
+  "description": "Preact components implementing Topcoat components",
   "main": "dist/index.js",
   "scripts": {
     "build": "build-storybook -o gh-pages && babel src --out-dir dist",
@@ -12,8 +12,8 @@
     "test:watch": "npm test -- --watch"
   },
   "keywords": [
-    "react",
-    "topcoat"
+    "topcoat",
+    "preact"
   ],
   "author": "Tommy-Carlos Williams",
   "license": "Apache-2.0",
