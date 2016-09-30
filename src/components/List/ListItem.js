@@ -7,15 +7,15 @@ const ListItem = (props) => {
   const cx = classNames({
     'topcoat-list__item': true,
   });
+  // @TODO when there is a clickHandler, maybe make it an <a>?
   const item = clickHandler
-    ? (<Tappable
-      component="li"
-      onTap={ clickHandler }
+    ? (<li
+      onClick={ clickHandler }
       className={ cx }
       { ...rest }
     >
       { props.children }
-    </Tappable>)
+    </li>)
     : (<li className={ cx } { ...rest }>
       { props.children }
     </li>);

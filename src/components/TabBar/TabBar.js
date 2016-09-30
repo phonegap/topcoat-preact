@@ -11,13 +11,12 @@ const TabBar = (props) => {
   const tabs = props.children.map(child => (
     <label key={ child.key } className="topcoat-tab-bar__item">
       <input type="radio" name={ props.name } />
-      <Tappable
-        component="button"
+      <button
         className="topcoat-tab-bar__button full"
-        onTap={ () => clickHandler(child.key) }
+        onClick={ () => clickHandler(child.key) }
       >
         { child }
-      </Tappable>
+      </button>
     </label>
   ));
   return (

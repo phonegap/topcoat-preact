@@ -14,13 +14,12 @@ const ButtonBar = (props) => {
   });
   const tabs = props.children.map(child => (
     <div key={ child.key } className="topcoat-button-bar__item">
-      <Tappable
-        component="button"
+      <button
         className={ `topcoat-button-bar__button${classNameModifier}` }
-        onTap={ () => clickHandler(child.key) }
+        onClick={ () => clickHandler(child.key) }
       >
         { child }
-      </Tappable>
+      </button>
     </div>
   ));
   return (

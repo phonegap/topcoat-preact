@@ -1,6 +1,5 @@
 import { h } from 'preact';
 import classNames from 'classnames';
-import Tappable from 'react-tappable';
 
 const Button = (props) => {
   const { clickHandler = () => {},
@@ -15,14 +14,13 @@ const Button = (props) => {
     'topcoat-button--large--quiet': large && quiet && !cta,
   });
   return (
-    <Tappable
-      component="button"
+    <button
       className={ cx }
-      onTap={ clickHandler }
+      onClick={ clickHandler }
       { ...rest }
     >
       { props.children || <span>&nbsp;</span> }
-    </Tappable>
+    </button>
   );
 };
 

@@ -38,11 +38,10 @@ var TabBar = function TabBar(props) {
       { key: child.key, className: 'topcoat-tab-bar__item' },
       (0, _preact.h)('input', { type: 'radio', name: props.name }),
       (0, _preact.h)(
-        _reactTappable2.default,
+        'button',
         {
-          component: 'button',
           className: 'topcoat-tab-bar__button full',
-          onTap: function onTap() {
+          onClick: function onClick() {
             return clickHandler(child.key);
           }
         },

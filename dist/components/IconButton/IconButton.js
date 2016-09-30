@@ -37,11 +37,10 @@ var IconButton = function IconButton(props) {
     'topcoat-icon-button--large--quiet': large && quiet
   });
   return (0, _preact.h)(
-    _reactTappable2.default,
+    'button',
     _extends({
-      component: 'button',
       className: cx,
-      onTap: clickHandler
+      onClick: clickHandler
     }, rest),
     (0, _preact.h)(
       'span',

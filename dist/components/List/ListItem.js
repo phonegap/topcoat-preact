@@ -29,11 +29,11 @@ var ListItem = function ListItem(props) {
   var cx = (0, _classnames2.default)({
     'topcoat-list__item': true
   });
+  // @TODO when there is a clickHandler, maybe make it an <a>?
   var item = clickHandler ? (0, _preact.h)(
-    _reactTappable2.default,
+    'li',
     _extends({
-      component: 'li',
-      onTap: clickHandler,
+      onClick: clickHandler,
       className: cx
     }, rest),
     props.children

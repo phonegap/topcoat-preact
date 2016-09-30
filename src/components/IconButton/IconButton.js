@@ -12,16 +12,15 @@ const IconButton = (props) => {
     'topcoat-icon-button--large--quiet': large && quiet,
   });
   return (
-    <Tappable
-      component="button"
+    <button
       className={ cx }
-      onTap={ clickHandler }
+      onClick={ clickHandler }
       { ...rest }
     >
       <span className="topcoat-icon">
         { props.children }
       </span>
-    </Tappable>
+    </button>
   );
 };
 

@@ -49,7 +49,6 @@
   "dependencies": {
     "classnames": "^2.2.5",
     "preact": "^6.0.2",
-    "preact-compat": "^3.2.0",
-    "react-tappable": "^0.8.3"
+    "preact-compat": "^3.2.0"
   }
 }

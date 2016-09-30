@@ -40,11 +40,10 @@ var ButtonBar = function ButtonBar(props) {
       'div',
       { key: child.key, className: 'topcoat-button-bar__item' },
       (0, _preact.h)(
-        _reactTappable2.default,
+        'button',
         {
-          component: 'button',
           className: 'topcoat-button-bar__button' + classNameModifier,
-          onTap: function onTap() {
+          onClick: function onClick() {
             return clickHandler(child.key);
           }
         },

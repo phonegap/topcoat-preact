@@ -12,10 +12,6 @@ var _classnames = require('classnames');
 
 var _classnames2 = _interopRequireDefault(_classnames);
 
-var _reactTappable = require('react-tappable');
-
-var _reactTappable2 = _interopRequireDefault(_reactTappable);
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
@@ -44,11 +40,10 @@ var Button = function Button(props) {
     'topcoat-button--large--quiet': large && quiet && !cta
   });
   return (0, _preact.h)(
-    _reactTappable2.default,
+    'button',
     _extends({
-      component: 'button',
       className: cx,
-      onTap: clickHandler
+      onClick: clickHandler
     }, rest),
     props.children || (0, _preact.h)(
       'span',
