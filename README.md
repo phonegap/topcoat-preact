@@ -37,4 +37,4 @@ Preact components implementing [Topcoat][topcoat] [components][topcoat-demos]
 
 [topcoat]: http://topcoat.io/
 [topcoat-demos]: http://topcoat.io/topcoat
-[storybook]: https://devgeeks.github.io/phonegap-topcoat-react
+[storybook]: http://phonegap.com/topcoat-preact
