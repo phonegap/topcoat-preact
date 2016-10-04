@@ -13,13 +13,13 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 (0, _storybook.storiesOf)('Button', module).addWithInfo('text', function () {
   return (0, _preact.h)(
     _2.default,
-    null,
+    { foo: { foo: 'bar' } },
     'Button'
   );
 }).addWithInfo('emoji', function () {
   return (0, _preact.h)(
     _2.default,
-    null,
+    { foo: true },
     '\u2620\uFE0F\u2728\uD83D\uDC80\u26A1\uFE0F\uD83D\uDC80\u2728\u2620\uFE0F'
   );
 }).addWithInfo('a clickHandler', function () {

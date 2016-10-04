@@ -9,7 +9,7 @@ const NavigationBarTitle = (props) => {
   });
   return (
     <h1 className={ cx } { ...props }>
-      { props.children || <span>&nbsp;</span> }
+      { props.children.length ? props.children : <span>&nbsp;</span> }
     </h1>
   );
 };

@@ -5,8 +5,8 @@ import Range from '../';
 
 storiesOf('Range', module)
   .addWithInfo('default', () => (
-    <Range name="default" />
+    <Range style={ { marginTop: '20px' } } name="default" />
   ))
   .addWithInfo('disabled', () => (
-    <Range name="disabled" disabled />
+    <Range style={ { marginTop: '20px' } } name="disabled" disabled />
   ));

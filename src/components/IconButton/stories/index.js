@@ -10,6 +10,9 @@ storiesOf('IconButton', module)
   .addWithInfo('default', () => (
     <IconButton />
   ))
+  .addWithInfo('styled', () => (
+    <IconButton className="yadda" />
+  ))
   .addWithInfo('with an svg', () => (
     <IconButton><Icon /></IconButton>
   ))

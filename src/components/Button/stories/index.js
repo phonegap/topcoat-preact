@@ -8,7 +8,7 @@ storiesOf('Button', module)
     <Button>Button</Button>
   ))
   .addWithInfo('emoji', () => (
-    <Button>☠️✨💀⚡️💀✨☠️</Button>
+    <Button foo>☠️✨💀⚡️💀✨☠️</Button>
   ))
   .addWithInfo('a clickHandler', () => (
     <Button clickHandler={ action('tapped') }>Click Me</Button>

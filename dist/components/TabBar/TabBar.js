@@ -32,7 +32,7 @@ var TabBar = function TabBar(props) {
     return (0, _preact.h)(
       'label',
       { key: child.key, className: 'topcoat-tab-bar__item' },
-      (0, _preact.h)('input', { type: 'radio', name: props.name }),
+      (0, _preact.h)('input', { 'aria-hidden': 'true', type: 'radio', name: props.name }),
       (0, _preact.h)(
         'button',
         {
