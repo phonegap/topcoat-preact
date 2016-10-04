@@ -8,9 +8,9 @@ const NavigationBar = (props) => {
     'topcoat-navigation-bar': true,
   });
   return (
-    <div className={ cx } { ...props }>
-      { props.children || <NavigationBarTitle>&nbsp;</NavigationBarTitle> }
-    </div>
+    <header role="banner" className={ cx } { ...props }>
+      { props.children || <div /> }
+    </header>
   );
 };
 

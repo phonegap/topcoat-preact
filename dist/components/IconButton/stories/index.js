@@ -21,6 +21,8 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 // @TODO this is all a mess -- need a beter way to do IconButtons
 (0, _storybook.storiesOf)('IconButton', module).addWithInfo('default', function () {
   return (0, _preact.h)(_2.default, null);
+}).addWithInfo('styled', function () {
+  return (0, _preact.h)(_2.default, { className: 'yadda' });
 }).addWithInfo('with an svg', function () {
   return (0, _preact.h)(
     _2.default,

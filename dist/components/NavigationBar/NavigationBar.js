@@ -23,13 +23,9 @@ var NavigationBar = function NavigationBar(props) {
     'topcoat-navigation-bar': true
   });
   return (0, _preact.h)(
-    'div',
-    _extends({ className: cx }, props),
-    props.children || (0, _preact.h)(
-      _NavigationBarTitle2.default,
-      null,
-      '\xA0'
-    )
+    'header',
+    _extends({ role: 'banner', className: cx }, props),
+    props.children || (0, _preact.h)('div', null)
   );
 };
 
