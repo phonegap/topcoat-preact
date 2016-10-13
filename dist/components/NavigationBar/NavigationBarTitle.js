@@ -23,7 +23,7 @@ var NavigationBarTitle = function NavigationBarTitle(props) {
   return (0, _preact.h)(
     'h1',
     _extends({ className: cx }, props),
-    props.children || (0, _preact.h)(
+    props.children.length ? props.children : (0, _preact.h)(
       'span',
       null,
       '\xA0'

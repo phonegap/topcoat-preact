@@ -140,8 +140,12 @@
 	preact.options.vnode = function (vnode) {
 		if (!vnode.preactCompatUpgraded) {
 			vnode.preactCompatUpgraded = true;
+	
 			var tag = vnode.nodeName,
 				attrs = vnode.attributes;
+	
+			if (!attrs) attrs = vnode.attributes = {};
+	
 			if (typeof tag==='function') {
 				if (tag[COMPONENT_WRAPPER_KEY]===true || (tag.prototype && 'isReactComponent' in tag.prototype)) {
 					if (!vnode.preactCompatNormalized) {
@@ -344,8 +348,6 @@
 	
 	function normalizeVNode(vnode) {
 		vnode.preactCompatNormalized = true;
-	
-		if (!vnode.attributes) vnode.attributes = {};
 	
 		applyClassName(vnode);
 	
@@ -19170,7 +19172,7 @@
 	  return (0, _preact.h)(
 	    'div',
 	    _extends({ className: cx }, rest),
-	    props.children || (0, _preact.h)(
+	    props.children.length ? props.children : (0, _preact.h)(
 	      'span',
 	      null,
 	      '\xA0'
@@ -19211,7 +19213,7 @@
 	  return (0, _preact.h)(
 	    'h1',
 	    _extends({ className: cx }, props),
-	    props.children || (0, _preact.h)(
+	    props.children.length ? props.children : (0, _preact.h)(
 	      'span',
 	      null,
 	      '\xA0'
@@ -22302,7 +22304,7 @@
 	(0, _storybook.storiesOf)('Button', module).addWithInfo('text', function () {
 	  return (0, _preact.h)(
 	    _2.default,
-	    { foo: { foo: 'bar' } },
+	    null,
 	    'Button'
 	  );
 	}).addWithInfo('emoji', function () {
@@ -22902,7 +22904,7 @@
 	  return (0, _preact.h)(
 	    'h3',
 	    _extends({ className: cx }, props),
-	    props.children || (0, _preact.h)(
+	    props.childnren.length ? props.children : (0, _preact.h)(
 	      'span',
 	      null,
 	      '\xA0'
@@ -23144,7 +23146,7 @@
 	  return (0, _preact.h)(
 	    'header',
 	    _extends({ role: 'banner', className: cx }, props),
-	    props.children || (0, _preact.h)('div', null)
+	    props.children.length ? props.children : (0, _preact.h)('div', null)
 	  );
 	};
 	
@@ -23563,9 +23565,9 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	(0, _storybook.storiesOf)('Range', module).addWithInfo('default', function () {
-	  return (0, _preact.h)(_2.default, { name: 'default' });
+	  return (0, _preact.h)(_2.default, { style: { marginTop: '20px' }, name: 'default' });
 	}).addWithInfo('disabled', function () {
-	  return (0, _preact.h)(_2.default, { name: 'disabled', disabled: true });
+	  return (0, _preact.h)(_2.default, { style: { marginTop: '20px' }, name: 'disabled', disabled: true });
 	});
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(13)(module)))
 

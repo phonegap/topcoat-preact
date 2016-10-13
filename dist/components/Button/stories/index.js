@@ -13,7 +13,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 (0, _storybook.storiesOf)('Button', module).addWithInfo('text', function () {
   return (0, _preact.h)(
     _2.default,
-    { foo: { foo: 'bar' } },
+    null,
     'Button'
   );
 }).addWithInfo('emoji', function () {

@@ -44,7 +44,7 @@ var NavigationBarItem = function NavigationBarItem(props) {
   return (0, _preact.h)(
     'div',
     _extends({ className: cx }, rest),
-    props.children || (0, _preact.h)(
+    props.children.length ? props.children : (0, _preact.h)(
       'span',
       null,
       '\xA0'

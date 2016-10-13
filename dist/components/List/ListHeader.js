@@ -21,7 +21,7 @@ var ListHeader = function ListHeader(props) {
   return (0, _preact.h)(
     'h3',
     _extends({ className: cx }, props),
-    props.children || (0, _preact.h)(
+    props.childnren.length ? props.children : (0, _preact.h)(
       'span',
       null,
       '\xA0'

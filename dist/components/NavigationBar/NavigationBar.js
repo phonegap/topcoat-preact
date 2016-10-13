@@ -25,7 +25,7 @@ var NavigationBar = function NavigationBar(props) {
   return (0, _preact.h)(
     'header',
     _extends({ role: 'banner', className: cx }, props),
-    props.children || (0, _preact.h)('div', null)
+    props.children.length ? props.children : (0, _preact.h)('div', null)
   );
 };
 
