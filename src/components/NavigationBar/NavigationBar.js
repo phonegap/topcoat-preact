@@ -9,7 +9,7 @@ const NavigationBar = (props) => {
   });
   return (
     <header role="banner" className={ cx } { ...props }>
-      { props.children || <div /> }
+      { props.children.length ? props.children : <div /> }
     </header>
   );
 };

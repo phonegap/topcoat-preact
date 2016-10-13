@@ -47,8 +47,10 @@
     "webpack": "^1.13.1"
   },
   "dependencies": {
+    "@kadira/react-storybook-addon-info": "^3.2.2",
+    "@kadira/storybook": "^2.24.0",
     "classnames": "^2.2.5",
     "preact": "^6.0.2",
-    "preact-compat": "^3.2.0"
+    "preact-compat": "^3.8.2"
   }
 }

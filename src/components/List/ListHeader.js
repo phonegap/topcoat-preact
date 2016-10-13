@@ -7,7 +7,7 @@ const ListHeader = (props) => {
   });
   return (
     <h3 className={ cx } { ...props }>
-      { props.children || <span>&nbsp;</span> }
+      { props.childnren.length ? props.children : <span>&nbsp;</span> }
     </h3>
   );
 };

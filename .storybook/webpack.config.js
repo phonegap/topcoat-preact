@@ -15,7 +15,6 @@ const config = {
     alias: {
       react: 'preact-compat',
       'react-dom': 'preact-compat',
-      'react-addons-create-fragment': 'preact-compat',
     },
   },
   module: {

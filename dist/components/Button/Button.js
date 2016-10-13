@@ -30,6 +30,7 @@ var Button = function Button(props) {
 
   var rest = _objectWithoutProperties(props, ['clickHandler', 'cta', 'full', 'large', 'quiet']);
 
+  console.log(props.children);
   var cx = (0, _classnames2.default)({
     full: full,
     'topcoat-button': !quiet && !cta && !large,
@@ -45,7 +46,7 @@ var Button = function Button(props) {
       className: cx,
       onClick: clickHandler
     }, rest),
-    props.children || (0, _preact.h)(
+    props.children.length ? props.children : (0, _preact.h)(
       'span',
       null,
       '\xA0'

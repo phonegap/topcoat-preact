@@ -15,7 +15,7 @@ const NavigationBarItem = (props) => {
   });
   return (
     <div className={ cx } { ...rest }>
-      { props.children || <span>&nbsp;</span> }
+      { props.children.length ? props.children : <span>&nbsp;</span> }
     </div>
   );
 };
