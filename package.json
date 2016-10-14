@@ -51,6 +51,7 @@
     "@kadira/storybook": "^2.24.0",
     "classnames": "^2.2.5",
     "preact": "^6.0.2",
-    "preact-compat": "^3.8.2"
+    "preact-compat": "^3.8.2",
+    "react-autosuggest": "^6.1.0"
   }
 }

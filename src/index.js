@@ -1,6 +1,7 @@
 import Button from './components/Button';
 import ButtonBar from './components/ButtonBar';
 import Checkbox from './components/Checkbox';
+import ComboBox from './components/ComboBox';
 import IconButton from './components/IconButton';
 import { List, ListContainer, ListHeader, ListItem }
   from './components/List';
@@ -18,6 +19,7 @@ export {
   Button,
   ButtonBar,
   Checkbox,
+  ComboBox,
   IconButton,
   List,
   ListContainer,
