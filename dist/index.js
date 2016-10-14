@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.TextInput = exports.TextArea = exports.TabBar = exports.Switch = exports.SearchInput = exports.Range = exports.RadioButton = exports.Notification = exports.NavigationBarTitle = exports.NavigationBarItem = exports.NavigationBar = exports.ListItem = exports.ListHeader = exports.ListContainer = exports.List = exports.IconButton = exports.Checkbox = exports.ButtonBar = exports.Button = undefined;
+exports.TextInput = exports.TextArea = exports.TabBar = exports.Switch = exports.SearchInput = exports.Range = exports.RadioButton = exports.Notification = exports.NavigationBarTitle = exports.NavigationBarItem = exports.NavigationBar = exports.ListItem = exports.ListHeader = exports.ListContainer = exports.List = exports.IconButton = exports.ComboBox = exports.Checkbox = exports.ButtonBar = exports.Button = undefined;
 
 var _Button = require('./components/Button');
 
@@ -16,6 +16,10 @@ var _ButtonBar2 = _interopRequireDefault(_ButtonBar);
 var _Checkbox = require('./components/Checkbox');
 
 var _Checkbox2 = _interopRequireDefault(_Checkbox);
+
+var _ComboBox = require('./components/ComboBox');
+
+var _ComboBox2 = _interopRequireDefault(_ComboBox);
 
 var _IconButton = require('./components/IconButton');
 
@@ -62,6 +66,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.Button = _Button2.default;
 exports.ButtonBar = _ButtonBar2.default;
 exports.Checkbox = _Checkbox2.default;
+exports.ComboBox = _ComboBox2.default;
 exports.IconButton = _IconButton2.default;
 exports.List = _List.List;
 exports.ListContainer = _List.ListContainer;
