@@ -42,11 +42,10 @@ var SearchInput = function (_Component) {
       //   ...or at least be able to be managed
       // @TODO - search icon is missing... need to figure
       //   out webpack issues around this
-      var _props = this.props;
-      var _props$large = _props.large;
-      var large = _props$large === undefined ? false : _props$large;
-
-      var rest = _objectWithoutProperties(_props, ['large']);
+      var _props = this.props,
+          _props$large = _props.large,
+          large = _props$large === undefined ? false : _props$large,
+          rest = _objectWithoutProperties(_props, ['large']);
 
       var cx = (0, _classnames2.default)({
         'topcoat-search-input': !large,
