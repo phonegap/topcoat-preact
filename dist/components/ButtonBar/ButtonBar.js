@@ -17,14 +17,13 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
 
 var ButtonBar = function ButtonBar(props) {
-  var _props$clickHandler = props.clickHandler;
-  var clickHandler = _props$clickHandler === undefined ? function () {} : _props$clickHandler;
-  var _props$full = props.full;
-  var full = _props$full === undefined ? false : _props$full;
-  var _props$large = props.large;
-  var large = _props$large === undefined ? false : _props$large;
-
-  var rest = _objectWithoutProperties(props, ['clickHandler', 'full', 'large']);
+  var _props$clickHandler = props.clickHandler,
+      clickHandler = _props$clickHandler === undefined ? function () {} : _props$clickHandler,
+      _props$full = props.full,
+      full = _props$full === undefined ? false : _props$full,
+      _props$large = props.large,
+      large = _props$large === undefined ? false : _props$large,
+      rest = _objectWithoutProperties(props, ['clickHandler', 'full', 'large']);
 
   var classNameModifier = large ? '--large' : '';
   var cx = (0, _classnames2.default)({
