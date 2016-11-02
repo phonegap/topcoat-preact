@@ -17,11 +17,12 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
 
 var TabBar = function TabBar(props) {
-  var _props$full = props.full,
-      full = _props$full === undefined ? false : _props$full,
-      _props$clickHandler = props.clickHandler,
-      clickHandler = _props$clickHandler === undefined ? function () {} : _props$clickHandler,
-      rest = _objectWithoutProperties(props, ['full', 'clickHandler']);
+  var _props$full = props.full;
+  var full = _props$full === undefined ? false : _props$full;
+  var _props$clickHandler = props.clickHandler;
+  var clickHandler = _props$clickHandler === undefined ? function () {} : _props$clickHandler;
+
+  var rest = _objectWithoutProperties(props, ['full', 'clickHandler']);
 
   var cx = (0, _classnames2.default)({
     full: full,

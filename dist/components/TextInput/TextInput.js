@@ -38,12 +38,13 @@ var TextInput = function (_Component) {
     value: function render() {
       var _this2 = this;
 
-      var _props = this.props,
-          _props$full = _props.full,
-          full = _props$full === undefined ? false : _props$full,
-          _props$large = _props.large,
-          large = _props$large === undefined ? false : _props$large,
-          rest = _objectWithoutProperties(_props, ['full', 'large']);
+      var _props = this.props;
+      var _props$full = _props.full;
+      var full = _props$full === undefined ? false : _props$full;
+      var _props$large = _props.large;
+      var large = _props$large === undefined ? false : _props$large;
+
+      var rest = _objectWithoutProperties(_props, ['full', 'large']);
 
       var cx = (0, _classnames2.default)({
         full: full,

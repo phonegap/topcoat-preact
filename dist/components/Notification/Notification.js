@@ -17,9 +17,10 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
 
 var Notification = function Notification(props) {
-  var _props$count = props.count,
-      count = _props$count === undefined ? 0 : _props$count,
-      rest = _objectWithoutProperties(props, ['count']);
+  var _props$count = props.count;
+  var count = _props$count === undefined ? 0 : _props$count;
+
+  var rest = _objectWithoutProperties(props, ['count']);
 
   var cx = (0, _classnames2.default)({
     'topcoat-notification': true

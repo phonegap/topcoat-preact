@@ -17,17 +17,18 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
 
 var Button = function Button(props) {
-  var _props$clickHandler = props.clickHandler,
-      clickHandler = _props$clickHandler === undefined ? function () {} : _props$clickHandler,
-      _props$cta = props.cta,
-      cta = _props$cta === undefined ? false : _props$cta,
-      _props$full = props.full,
-      full = _props$full === undefined ? false : _props$full,
-      _props$large = props.large,
-      large = _props$large === undefined ? false : _props$large,
-      _props$quiet = props.quiet,
-      quiet = _props$quiet === undefined ? false : _props$quiet,
-      rest = _objectWithoutProperties(props, ['clickHandler', 'cta', 'full', 'large', 'quiet']);
+  var _props$clickHandler = props.clickHandler;
+  var clickHandler = _props$clickHandler === undefined ? function () {} : _props$clickHandler;
+  var _props$cta = props.cta;
+  var cta = _props$cta === undefined ? false : _props$cta;
+  var _props$full = props.full;
+  var full = _props$full === undefined ? false : _props$full;
+  var _props$large = props.large;
+  var large = _props$large === undefined ? false : _props$large;
+  var _props$quiet = props.quiet;
+  var quiet = _props$quiet === undefined ? false : _props$quiet;
+
+  var rest = _objectWithoutProperties(props, ['clickHandler', 'cta', 'full', 'large', 'quiet']);
 
   console.log(props.children);
   var cx = (0, _classnames2.default)({

@@ -20,11 +20,12 @@ function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in ob
 //   ...or at least be able to be managed
 // @TODO - implement all label and a11y suggestions from http://codepen.io/Topcoat/pen/piHcs
 var Checkbox = function Checkbox(props) {
-  var description = props.description,
-      _props$disabled = props.disabled,
-      disabled = _props$disabled === undefined ? false : _props$disabled,
-      id = props.id,
-      rest = _objectWithoutProperties(props, ['description', 'disabled', 'id']);
+  var description = props.description;
+  var _props$disabled = props.disabled;
+  var disabled = _props$disabled === undefined ? false : _props$disabled;
+  var id = props.id;
+
+  var rest = _objectWithoutProperties(props, ['description', 'disabled', 'id']);
 
   var cx = (0, _classnames2.default)({
     'topcoat-checkbox': true
