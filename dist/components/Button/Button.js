@@ -30,7 +30,6 @@ var Button = function Button(props) {
 
   var rest = _objectWithoutProperties(props, ['clickHandler', 'cta', 'full', 'large', 'quiet']);
 
-  console.log(props.children);
   var cx = (0, _classnames2.default)({
     full: full,
     'topcoat-button': !quiet && !cta && !large,
