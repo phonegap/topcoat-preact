@@ -4,7 +4,6 @@ import classNames from 'classnames';
 const Button = (props) => {
   const { clickHandler = () => {},
     cta = false, full = false, large = false, quiet = false, ...rest } = props;
-  console.log(props.children);
   const cx = classNames({
     full,
     'topcoat-button': !quiet && !cta && !large,
