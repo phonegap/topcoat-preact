@@ -24,18 +24,4 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
   return (0, _preact.h)(_2.default, { name: 'sized', cols: '24', rows: '6' });
 }).addWithInfo('disabled', function () {
   return (0, _preact.h)(_2.default, { name: 'disabled', disabled: true });
-}).addWithInfo('large', function () {
-  return (0, _preact.h)(_2.default, { name: 'large', large: true });
-}).addWithInfo('large placeholder', function () {
-  return (0, _preact.h)(_2.default, { name: 'large-placeholder', placeholder: 'This large text area has a placeholder' });
-}).addWithInfo('large with text', function () {
-  return (0, _preact.h)(
-    _2.default,
-    { name: 'large-with-text' },
-    'This large text area has existing text'
-  );
-}).addWithInfo('large sized', function () {
-  return (0, _preact.h)(_2.default, { name: 'large-sized', large: true, cols: '24', rows: '6' });
-}).addWithInfo('large disabled', function () {
-  return (0, _preact.h)(_2.default, { name: 'large-disabled', disabled: true, large: true });
 });

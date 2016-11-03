@@ -8,6 +8,8 @@ var _ = require('../');
 
 var _2 = _interopRequireDefault(_);
 
+require('adobe-mobile-ui/css/button-mobile.css');
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 (0, _storybook.storiesOf)('Button', module).addWithInfo('text', function () {
@@ -64,42 +66,6 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
   return (0, _preact.h)(
     _2.default,
     { cta: true, disabled: true },
-    'Button'
-  );
-}).addWithInfo('large', function () {
-  return (0, _preact.h)(
-    _2.default,
-    { large: true },
-    'Button'
-  );
-}).addWithInfo('disabled large', function () {
-  return (0, _preact.h)(
-    _2.default,
-    { large: true, disabled: true },
-    'Button'
-  );
-}).addWithInfo('large quiet', function () {
-  return (0, _preact.h)(
-    _2.default,
-    { large: true, quiet: true },
-    'Button'
-  );
-}).addWithInfo('disabled large quiet', function () {
-  return (0, _preact.h)(
-    _2.default,
-    { large: true, quiet: true, disabled: true },
-    'Button'
-  );
-}).addWithInfo('large cta', function () {
-  return (0, _preact.h)(
-    _2.default,
-    { large: true, cta: true },
-    'Button'
-  );
-}).addWithInfo('disabled large cta', function () {
-  return (0, _preact.h)(
-    _2.default,
-    { large: true, cta: true, disabled: true },
     'Button'
   );
 });

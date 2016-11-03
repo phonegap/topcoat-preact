@@ -40,14 +40,12 @@ var suggestions = [{
   });
 }).addWithInfo('full', function () {
   return (0, _preact.h)(_2.default, { full: true });
-}).addWithInfo('large', function () {
-  return (0, _preact.h)(_2.default, { large: true });
 }).addWithInfo('inputProps', function () {
   return (0, _preact.h)(_2.default, {
     suggestions: suggestions,
     placeholder: 'Choose a framework',
     inputProps: {
-      class: 'topcoat-text-input--large full',
+      class: 'topcoat-text-input full',
       style: { background: 'white' },
       onClick: (0, _storybook.action)('click')
     }

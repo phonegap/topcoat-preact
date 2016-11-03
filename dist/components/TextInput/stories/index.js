@@ -18,12 +18,4 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
   return (0, _preact.h)(_2.default, { name: 'fail', pattern: 'not-fail', defaultValue: 'fail' });
 }).addWithInfo('disabled', function () {
   return (0, _preact.h)(_2.default, { name: 'disabled', disabled: true });
-}).addWithInfo('large', function () {
-  return (0, _preact.h)(_2.default, { name: 'large', large: true });
-}).addWithInfo('large default value', function () {
-  return (0, _preact.h)(_2.default, { name: 'large-default-value', large: true, defaultValue: 'large default value' });
-}).addWithInfo('large fail', function () {
-  return (0, _preact.h)(_2.default, { name: 'large-fail', large: true, pattern: 'not-fail', defaultValue: 'fail' });
-}).addWithInfo('large disabled', function () {
-  return (0, _preact.h)(_2.default, { name: 'large-disabled', disabled: true, large: true });
 });

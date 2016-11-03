@@ -18,19 +18,4 @@ storiesOf('TextArea', module)
   ))
   .addWithInfo('disabled', () => (
     <TextArea name="disabled" disabled />
-  ))
-  .addWithInfo('large', () => (
-    <TextArea name="large" large />
-  ))
-  .addWithInfo('large placeholder', () => (
-    <TextArea name="large-placeholder" placeholder="This large text area has a placeholder" />
-  ))
-  .addWithInfo('large with text', () => (
-    <TextArea name="large-with-text">This large text area has existing text</TextArea>
-  ))
-  .addWithInfo('large sized', () => (
-    <TextArea name="large-sized" large cols="24" rows="6" />
-  ))
-  .addWithInfo('large disabled', () => (
-    <TextArea name="large-disabled" disabled large />
   ));

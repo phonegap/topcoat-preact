@@ -24,11 +24,4 @@ storiesOf('ButtonBar', module)
       <span key="two">Two</span>
       <span key="three">Three</span>
     </ButtonBar>
-  ))
-  .addWithInfo('large', () => (
-    <ButtonBar large>
-      <span key="one">One</span>
-      <span key="two">Two</span>
-      <span key="three">Three</span>
-    </ButtonBar>
   ));

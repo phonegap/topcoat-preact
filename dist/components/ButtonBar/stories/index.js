@@ -70,24 +70,4 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
       'Three'
     )
   );
-}).addWithInfo('large', function () {
-  return (0, _preact.h)(
-    _2.default,
-    { large: true },
-    (0, _preact.h)(
-      'span',
-      { key: 'one' },
-      'One'
-    ),
-    (0, _preact.h)(
-      'span',
-      { key: 'two' },
-      'Two'
-    ),
-    (0, _preact.h)(
-      'span',
-      { key: 'three' },
-      'Three'
-    )
-  );
 });

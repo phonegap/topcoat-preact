@@ -3,6 +3,8 @@ import { storiesOf, action } from '@kadira/storybook';
 
 import Button from '../';
 
+import 'adobe-mobile-ui/css/button-mobile.css';
+
 storiesOf('Button', module)
   .addWithInfo('text', () => (
     <Button>Button</Button>
@@ -33,22 +35,4 @@ storiesOf('Button', module)
   ))
   .addWithInfo('disabled cta', () => (
     <Button cta disabled>Button</Button>
-  ))
-  .addWithInfo('large', () => (
-    <Button large>Button</Button>
-  ))
-  .addWithInfo('disabled large', () => (
-    <Button large disabled>Button</Button>
-  ))
-  .addWithInfo('large quiet', () => (
-    <Button large quiet>Button</Button>
-  ))
-  .addWithInfo('disabled large quiet', () => (
-    <Button large quiet disabled>Button</Button>
-  ))
-  .addWithInfo('large cta', () => (
-    <Button large cta>Button</Button>
-  ))
-  .addWithInfo('disabled large cta', () => (
-    <Button large cta disabled>Button</Button>
   ));

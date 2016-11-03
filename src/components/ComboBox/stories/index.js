@@ -47,15 +47,12 @@ storiesOf('ComboBox', module)
   .addWithInfo('full', () => (
     <ComboBox full />
   ))
-  .addWithInfo('large', () => (
-    <ComboBox large />
-  ))
   .addWithInfo('inputProps', () => (
     <ComboBox
       suggestions={ suggestions }
       placeholder="Choose a framework"
       inputProps={ {
-        class: 'topcoat-text-input--large full',
+        class: 'topcoat-text-input full',
         style: { background: 'white' },
         onClick: action('click'),
       } }

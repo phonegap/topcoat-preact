@@ -9,10 +9,4 @@ storiesOf('SearchInput', module)
   ))
   .addWithInfo('disabled', () => (
     <SearchInput name="disabled" disabled />
-  ))
-  .addWithInfo('large', () => (
-    <SearchInput name="large" large />
-  ))
-  .addWithInfo('large disabled', () => (
-    <SearchInput name="large-disabled" disabled large />
   ));
