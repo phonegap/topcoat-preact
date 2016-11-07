@@ -4,9 +4,8 @@
   "description": "Preact components implementing Topcoat components",
   "main": "dist/index.js",
   "scripts": {
-    "build": "build-storybook -o gh-pages && babel src --out-dir dist",
+    "build": "build-storybook -o docs && babel src --out-dir dist",
     "start": "start-storybook -p 9001",
-    "publish-pages": "git subtree push --prefix gh-pages origin gh-pages",
     "storybook": "start-storybook -p 9001",
     "test": "NODE_PATH=$NODE_PATH:$PWD/src mocha \"./src/**/tests/index.js\" --compilers js:babel-core/register,css:tests/null-compiler.js --recursive --require ./tests/setup.js",
     "test:watch": "npm test -- --watch"

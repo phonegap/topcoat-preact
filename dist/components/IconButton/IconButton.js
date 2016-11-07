@@ -17,14 +17,13 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
 
 var IconButton = function IconButton(props) {
-  var _props$clickHandler = props.clickHandler;
-  var clickHandler = _props$clickHandler === undefined ? function () {} : _props$clickHandler;
-  var _props$large = props.large;
-  var large = _props$large === undefined ? false : _props$large;
-  var _props$quiet = props.quiet;
-  var quiet = _props$quiet === undefined ? false : _props$quiet;
-
-  var rest = _objectWithoutProperties(props, ['clickHandler', 'large', 'quiet']);
+  var _props$clickHandler = props.clickHandler,
+      clickHandler = _props$clickHandler === undefined ? function () {} : _props$clickHandler,
+      _props$large = props.large,
+      large = _props$large === undefined ? false : _props$large,
+      _props$quiet = props.quiet,
+      quiet = _props$quiet === undefined ? false : _props$quiet,
+      rest = _objectWithoutProperties(props, ['clickHandler', 'large', 'quiet']);
 
   var cx = (0, _classnames2.default)({
     'topcoat-icon-button': !quiet && !large,

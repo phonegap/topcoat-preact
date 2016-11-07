@@ -1,11 +1,10 @@
-Topcoat Preact Components
-------------------------
+# Topcoat Preact Components
 
 Preact components implementing [Topcoat][topcoat] [components][topcoat-demos]
 
 [Demos and API:][storybook]
 
-### Components:
+## Components:
 
 - [x] Button
 - [x] Button Bar
@@ -34,22 +33,19 @@ Preact components implementing [Topcoat][topcoat] [components][topcoat-demos]
 - [x] Textarea
 - [x] Large Textarea
 
-### Workflow
+## Workflow
 
-#### To run the Storybook in dev mode:
+### To run the Storybook in dev mode:
 
 - `npm start`
-- Then open http://localhost:9001/ in a browser
+- Then open `http://localhost:9001/` in a browser
 
-#### Before committing changes
+### Before committing changes
 
-Before committing any changes, the project must be built, then after the commit
-the Storybook gh-pages must be updated.
+Before committing any changes, the project must be built to the docs directory, which will be published at [phonegap.com/topcoat-preact][[storybook]]
 
 - `npm run build` to build the components into `dist`
 - `git add . && git commit && git push` or whatever your git workflow is...
-- `npm run publish-pages` to publish the STorybook to gh-pages
-
 
 [topcoat]: http://topcoat.io/
 [topcoat-demos]: http://topcoat.io/topcoat
