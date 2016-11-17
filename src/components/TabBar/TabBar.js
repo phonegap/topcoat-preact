@@ -11,7 +11,7 @@ const TabBar = (props) => {
     <label key={ child.key } className="topcoat-tab-bar__item">
       <input aria-hidden="true" type="radio" name={ props.name } />
       <button
-        className="topcoat-tab-bar__button full"
+        className="topcoat-tab-bar__button"
         onClick={ () => clickHandler(child.key) }
       >
         { child }

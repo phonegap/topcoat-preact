@@ -8,6 +8,8 @@ var _ = require('../');
 
 var _2 = _interopRequireDefault(_);
 
+require('adobe-mobile-ui/css/tab-bar-mobile.css');
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 (0, _storybook.storiesOf)('TabBar', module).addWithInfo('default', 'Children must be provided with keys', function () {
