@@ -3,6 +3,8 @@ import { storiesOf, action } from '@kadira/storybook';
 
 import TabBar from '../';
 
+import 'adobe-mobile-ui/css/tab-bar-mobile.css';
+
 storiesOf('TabBar', module)
   .addWithInfo('default', 'Children must be provided with keys', () => (
     <TabBar name="default">

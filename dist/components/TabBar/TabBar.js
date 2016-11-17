@@ -35,7 +35,7 @@ var TabBar = function TabBar(props) {
       (0, _preact.h)(
         'button',
         {
-          className: 'topcoat-tab-bar__button full',
+          className: 'topcoat-tab-bar__button',
           onClick: function onClick() {
             return clickHandler(child.key);
           }
