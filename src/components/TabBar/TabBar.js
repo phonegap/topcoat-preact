@@ -9,9 +9,9 @@ const TabBar = (props) => {
   });
   const tabs = props.children.map(child => (
     <label key={ child.key } className="topcoat-tab-bar__item">
-      <input aria-hidden="true" type="radio" name={ props.name } />
+      { /* <input aria-hidden="true" type="radio" name={ props.name } /> */ }
       <button
-        className="topcoat-tab-bar__button"
+        className={ `topcoat-tab-bar__button${child.props.selected ? '--selected' : ''}` }
         onClick={ () => clickHandler(child.key) }
       >
         { child }
