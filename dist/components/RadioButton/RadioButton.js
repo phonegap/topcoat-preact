@@ -19,12 +19,13 @@ function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in ob
 // @TODO - radio buttons should be managed
 //   ...or at least be able to be managed
 var RadioButton = function RadioButton(props) {
-  var _props$right = props.right,
-      right = _props$right === undefined ? false : _props$right,
-      _props$disabled = props.disabled,
-      disabled = _props$disabled === undefined ? false : _props$disabled,
-      name = props.name,
-      rest = _objectWithoutProperties(props, ['right', 'disabled', 'name']);
+  var _props$right = props.right;
+  var right = _props$right === undefined ? false : _props$right;
+  var _props$disabled = props.disabled;
+  var disabled = _props$disabled === undefined ? false : _props$disabled;
+  var name = props.name;
+
+  var rest = _objectWithoutProperties(props, ['right', 'disabled', 'name']);
 
   var cx = (0, _classnames2.default)({
     'topcoat-radio-button': true
