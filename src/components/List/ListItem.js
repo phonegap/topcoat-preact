@@ -2,7 +2,7 @@ import { h } from 'preact';
 import classNames from 'classnames';
 
 const ListItem = (props) => {
-  const { clickHandler = false, ...rest } = props;
+  const { clickHandler = false, className, ...rest } = props;
   const cx = classNames({
     'topcoat-list__item': true,
   });
@@ -10,12 +10,12 @@ const ListItem = (props) => {
   const item = clickHandler
     ? (<li
       onClick={ clickHandler }
-      className={ cx }
+      className={ `${cx} ${className}` }
       { ...rest }
     >
       { props.children }
     </li>)
-    : (<li className={ cx } { ...rest }>
+    : (<li className={ `${cx} ${className}` } { ...rest }>
       { props.children }
     </li>);
   return item;

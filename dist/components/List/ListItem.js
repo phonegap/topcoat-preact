@@ -19,8 +19,9 @@ function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in ob
 var ListItem = function ListItem(props) {
   var _props$clickHandler = props.clickHandler;
   var clickHandler = _props$clickHandler === undefined ? false : _props$clickHandler;
+  var className = props.className;
 
-  var rest = _objectWithoutProperties(props, ['clickHandler']);
+  var rest = _objectWithoutProperties(props, ['clickHandler', 'className']);
 
   var cx = (0, _classnames2.default)({
     'topcoat-list__item': true
@@ -30,12 +31,12 @@ var ListItem = function ListItem(props) {
     'li',
     _extends({
       onClick: clickHandler,
-      className: cx
+      className: cx + ' ' + className
     }, rest),
     props.children
   ) : (0, _preact.h)(
     'li',
-    _extends({ className: cx }, rest),
+    _extends({ className: cx + ' ' + className }, rest),
     props.children
   );
   return item;
