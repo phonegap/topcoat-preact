@@ -62,6 +62,10 @@ var ComboBox = function (_Component) {
       });
     };
 
+    _this.onSuggestionSelected = function () {
+      _this.input.blur();
+    };
+
     _this.getSuggestions = function (value) {
       return _this.props.suggestions || [];
     };
@@ -107,6 +111,8 @@ var ComboBox = function (_Component) {
   _createClass(ComboBox, [{
     key: 'render',
     value: function render() {
+      var _this2 = this;
+
       var _state = this.state;
       var value = _state.value;
       var suggestionsState = _state.suggestionsState;
@@ -129,6 +135,8 @@ var ComboBox = function (_Component) {
       var getSuggestions = _props$getSuggestions === undefined ? this.getSuggestions : _props$getSuggestions;
       var _props$getSuggestionV = _props.getSuggestionValue;
       var getSuggestionValue = _props$getSuggestionV === undefined ? this.getSuggestionValue : _props$getSuggestionV;
+      var _props$onSuggestionSe = _props.onSuggestionSelected;
+      var onSuggestionSelected = _props$onSuggestionSe === undefined ? this.onSuggestionSelected : _props$onSuggestionSe;
       var _props$onChangeHandle = _props.onChangeHandler;
       var onChangeHandler = _props$onChangeHandle === undefined ? this.onChange : _props$onChangeHandle;
       var _props$onSuggestionsF = _props.onSuggestionsFetchRequested;
@@ -143,7 +151,7 @@ var ComboBox = function (_Component) {
       var _props$renderSuggesti = _props.renderSuggestion;
       var renderSuggestion = _props$renderSuggesti === undefined ? this.renderSuggestion : _props$renderSuggesti;
 
-      var rest = _objectWithoutProperties(_props, ['full', 'large', 'theme', 'suggestions', 'getSuggestions', 'getSuggestionValue', 'onChangeHandler', 'onSuggestionsFetchRequested', 'onSuggestionsClearRequested', 'shouldRenderSuggestions', 'inputProps', 'placeholder', 'renderSuggestion']);
+      var rest = _objectWithoutProperties(_props, ['full', 'large', 'theme', 'suggestions', 'getSuggestions', 'getSuggestionValue', 'onSuggestionSelected', 'onChangeHandler', 'onSuggestionsFetchRequested', 'onSuggestionsClearRequested', 'shouldRenderSuggestions', 'inputProps', 'placeholder', 'renderSuggestion']);
 
       var defaultInputProps = _extends({}, inputProps, {
         full: full,
@@ -156,8 +164,14 @@ var ComboBox = function (_Component) {
       var classNameModifier = large ? '--large' : '';
 
       return (0, _preact.h)(_reactAutosuggest2.default, _extends({
+        ref: function ref(autosuggest) {
+          if (autosuggest) {
+            _this2.input = autosuggest.input;
+          }
+        },
         theme: theme,
         suggestions: suggestionsState,
+        onSuggestionSelected: onSuggestionSelected,
         onSuggestionsFetchRequested: onSuggestionsFetchRequested,
         onSuggestionsClearRequested: onSuggestionsClearRequested,
         getSuggestionValue: getSuggestionValue,

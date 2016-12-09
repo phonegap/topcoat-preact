@@ -33,6 +33,10 @@ class ComboBox extends Component {
     });
   };
 
+  onSuggestionSelected = () => {
+    this.input.blur();
+  }
+
   // simplest possible default
   getSuggestions = value => this.props.suggestions || [];
 
@@ -70,6 +74,7 @@ class ComboBox extends Component {
       suggestions = [],
       getSuggestions = this.getSuggestions,
       getSuggestionValue = this.getSuggestionValue,
+      onSuggestionSelected = this.onSuggestionSelected,
       onChangeHandler = this.onChange,
       onSuggestionsFetchRequested = this.onSuggestionsFetchRequested,
       onSuggestionsClearRequested = this.onSuggestionsClearRequested,
@@ -94,8 +99,14 @@ class ComboBox extends Component {
 
     return (
       <Autosuggest
+        ref={ (autosuggest) => {
+          if (autosuggest) {
+            this.input = autosuggest.input;
+          }
+        } }
         theme={ theme }
         suggestions={ suggestionsState }
+        onSuggestionSelected={ onSuggestionSelected }
         onSuggestionsFetchRequested={ onSuggestionsFetchRequested }
         onSuggestionsClearRequested={ onSuggestionsClearRequested }
         getSuggestionValue={ getSuggestionValue }
