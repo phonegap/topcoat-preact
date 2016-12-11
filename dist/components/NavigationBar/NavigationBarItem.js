@@ -17,27 +17,15 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
 
 var NavigationBarItem = function NavigationBarItem(props) {
-  var _props$full = props.full,
-      full = _props$full === undefined ? false : _props$full,
-      _props$center = props.center,
-      center = _props$center === undefined ? false : _props$center,
-      _props$left = props.left,
+  var _props$left = props.left,
       left = _props$left === undefined ? false : _props$left,
       _props$right = props.right,
       right = _props$right === undefined ? false : _props$right,
-      _props$half = props.half,
-      half = _props$half === undefined ? false : _props$half,
-      _props$quarter = props.quarter,
-      quarter = _props$quarter === undefined ? false : _props$quarter,
-      rest = _objectWithoutProperties(props, ['full', 'center', 'left', 'right', 'half', 'quarter']);
+      rest = _objectWithoutProperties(props, ['left', 'right']);
 
   var cx = (0, _classnames2.default)({
-    full: full,
-    center: center,
-    left: left,
-    half: half,
-    quarter: quarter,
-    right: right,
+    'topcoat-left': left,
+    'topcoat-right': right,
     'topcoat-navigation-bar__item': true
   });
   return (0, _preact.h)(

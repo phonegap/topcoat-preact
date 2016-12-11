@@ -6,6 +6,8 @@ var _storybook = require('@kadira/storybook');
 
 var _ = require('../');
 
+require('adobe-mobile-ui/css/navigation-bar-mobile.css');
+
 (0, _storybook.storiesOf)('NavigationBar', module).addWithInfo('default', function () {
   return (0, _preact.h)(
     _.NavigationBar,
@@ -53,20 +55,6 @@ var _ = require('../');
         _.NavigationBarTitle,
         null,
         'Full Centered Title'
-      )
-    )
-  );
-}).addWithInfo('not centred', function () {
-  return (0, _preact.h)(
-    _.NavigationBar,
-    null,
-    (0, _preact.h)(
-      _.NavigationBarItem,
-      { full: true },
-      (0, _preact.h)(
-        _.NavigationBarTitle,
-        null,
-        'Full Not Centered Title'
       )
     )
   );
