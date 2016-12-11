@@ -17,11 +17,10 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
 
 var ListItem = function ListItem(props) {
-  var _props$clickHandler = props.clickHandler;
-  var clickHandler = _props$clickHandler === undefined ? false : _props$clickHandler;
-  var className = props.className;
-
-  var rest = _objectWithoutProperties(props, ['clickHandler', 'className']);
+  var _props$clickHandler = props.clickHandler,
+      clickHandler = _props$clickHandler === undefined ? false : _props$clickHandler,
+      className = props.className,
+      rest = _objectWithoutProperties(props, ['clickHandler', 'className']);
 
   var cx = (0, _classnames2.default)({
     'topcoat-list__item': true

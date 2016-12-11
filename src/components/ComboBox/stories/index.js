@@ -3,6 +3,8 @@ import { action, storiesOf } from '@kadira/storybook';
 
 import ComboBox from '../';
 
+import 'adobe-mobile-ui/css/combobox-mobile.css';
+
 const suggestions = [
   {
     value: 'Preact',

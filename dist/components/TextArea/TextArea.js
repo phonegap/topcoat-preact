@@ -19,10 +19,9 @@ function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in ob
 // @TODO - text areas should be managed
 //   ...or at least be able to be managed
 var TextArea = function TextArea(props) {
-  var _props$large = props.large;
-  var large = _props$large === undefined ? false : _props$large;
-
-  var rest = _objectWithoutProperties(props, ['large']);
+  var _props$large = props.large,
+      large = _props$large === undefined ? false : _props$large,
+      rest = _objectWithoutProperties(props, ['large']);
 
   var cx = (0, _classnames2.default)({
     'topcoat-textarea': !large,

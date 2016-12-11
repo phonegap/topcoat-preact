@@ -21,10 +21,9 @@ function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in ob
 // NOTE: the 'checked' prop will freeze the component in 'on' unless the
 //   component is managed
 var Switch = function Switch(props) {
-  var checked = props.checked;
-  var disabled = props.disabled;
-
-  var rest = _objectWithoutProperties(props, ['checked', 'disabled']);
+  var checked = props.checked,
+      disabled = props.disabled,
+      rest = _objectWithoutProperties(props, ['checked', 'disabled']);
 
   var cx = (0, _classnames2.default)({
     'topcoat-switch': true

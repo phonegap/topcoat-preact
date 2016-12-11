@@ -37,8 +37,8 @@ var ComboBox = function (_Component) {
     var _this = _possibleConstructorReturn(this, (ComboBox.__proto__ || Object.getPrototypeOf(ComboBox)).call(this));
 
     _this.onChange = function (event, _ref) {
-      var newValue = _ref.newValue;
-      var method = _ref.method;
+      var newValue = _ref.newValue,
+          method = _ref.method;
 
       _this.setState({
         value: newValue
@@ -81,7 +81,7 @@ var ComboBox = function (_Component) {
     _this.theme = {
       container: 'topcoat-combobox__container',
       containerOpen: 'topcoat-combobox__container--open',
-      input: 'topcoat-text-input',
+      input: 'topcoat-combobox__select',
       suggestionsContainer: 'topcoat-combobox__suggestions-container',
       suggestionsList: 'topcoat-list__container',
       suggestion: 'topcoat-list__item',
@@ -113,45 +113,44 @@ var ComboBox = function (_Component) {
     value: function render() {
       var _this2 = this;
 
-      var _state = this.state;
-      var value = _state.value;
-      var suggestionsState = _state.suggestionsState;
+      var _state = this.state,
+          value = _state.value,
+          suggestionsState = _state.suggestionsState;
 
       var inputClassNames = (0, _classnames2.default)({
-        'topcoat-text-input': !this.props.large,
-        'topcoat-text-input--large': this.props.large,
+        'topcoat-combobox__select': true,
         full: !!this.props.full
       });
-      var _props = this.props;
-      var _props$full = _props.full;
-      var full = _props$full === undefined ? false : _props$full;
-      var _props$large = _props.large;
-      var large = _props$large === undefined ? false : _props$large;
-      var _props$theme = _props.theme;
-      var theme = _props$theme === undefined ? this.theme : _props$theme;
-      var _props$suggestions = _props.suggestions;
-      var suggestions = _props$suggestions === undefined ? [] : _props$suggestions;
-      var _props$getSuggestions = _props.getSuggestions;
-      var getSuggestions = _props$getSuggestions === undefined ? this.getSuggestions : _props$getSuggestions;
-      var _props$getSuggestionV = _props.getSuggestionValue;
-      var getSuggestionValue = _props$getSuggestionV === undefined ? this.getSuggestionValue : _props$getSuggestionV;
-      var _props$onSuggestionSe = _props.onSuggestionSelected;
-      var onSuggestionSelected = _props$onSuggestionSe === undefined ? this.onSuggestionSelected : _props$onSuggestionSe;
-      var _props$onChangeHandle = _props.onChangeHandler;
-      var onChangeHandler = _props$onChangeHandle === undefined ? this.onChange : _props$onChangeHandle;
-      var _props$onSuggestionsF = _props.onSuggestionsFetchRequested;
-      var onSuggestionsFetchRequested = _props$onSuggestionsF === undefined ? this.onSuggestionsFetchRequested : _props$onSuggestionsF;
-      var _props$onSuggestionsC = _props.onSuggestionsClearRequested;
-      var onSuggestionsClearRequested = _props$onSuggestionsC === undefined ? this.onSuggestionsClearRequested : _props$onSuggestionsC;
-      var _props$shouldRenderSu = _props.shouldRenderSuggestions;
-      var shouldRenderSuggestions = _props$shouldRenderSu === undefined ? this.shouldRenderSuggestions : _props$shouldRenderSu;
-      var _props$inputProps = _props.inputProps;
-      var inputProps = _props$inputProps === undefined ? {} : _props$inputProps;
-      var placeholder = _props.placeholder;
-      var _props$renderSuggesti = _props.renderSuggestion;
-      var renderSuggestion = _props$renderSuggesti === undefined ? this.renderSuggestion : _props$renderSuggesti;
 
-      var rest = _objectWithoutProperties(_props, ['full', 'large', 'theme', 'suggestions', 'getSuggestions', 'getSuggestionValue', 'onSuggestionSelected', 'onChangeHandler', 'onSuggestionsFetchRequested', 'onSuggestionsClearRequested', 'shouldRenderSuggestions', 'inputProps', 'placeholder', 'renderSuggestion']);
+      var _props = this.props,
+          _props$full = _props.full,
+          full = _props$full === undefined ? false : _props$full,
+          _props$large = _props.large,
+          large = _props$large === undefined ? false : _props$large,
+          _props$theme = _props.theme,
+          theme = _props$theme === undefined ? this.theme : _props$theme,
+          _props$suggestions = _props.suggestions,
+          suggestions = _props$suggestions === undefined ? [] : _props$suggestions,
+          _props$getSuggestions = _props.getSuggestions,
+          getSuggestions = _props$getSuggestions === undefined ? this.getSuggestions : _props$getSuggestions,
+          _props$getSuggestionV = _props.getSuggestionValue,
+          getSuggestionValue = _props$getSuggestionV === undefined ? this.getSuggestionValue : _props$getSuggestionV,
+          _props$onSuggestionSe = _props.onSuggestionSelected,
+          onSuggestionSelected = _props$onSuggestionSe === undefined ? this.onSuggestionSelected : _props$onSuggestionSe,
+          _props$onChangeHandle = _props.onChangeHandler,
+          onChangeHandler = _props$onChangeHandle === undefined ? this.onChange : _props$onChangeHandle,
+          _props$onSuggestionsF = _props.onSuggestionsFetchRequested,
+          onSuggestionsFetchRequested = _props$onSuggestionsF === undefined ? this.onSuggestionsFetchRequested : _props$onSuggestionsF,
+          _props$onSuggestionsC = _props.onSuggestionsClearRequested,
+          onSuggestionsClearRequested = _props$onSuggestionsC === undefined ? this.onSuggestionsClearRequested : _props$onSuggestionsC,
+          _props$shouldRenderSu = _props.shouldRenderSuggestions,
+          shouldRenderSuggestions = _props$shouldRenderSu === undefined ? this.shouldRenderSuggestions : _props$shouldRenderSu,
+          _props$inputProps = _props.inputProps,
+          inputProps = _props$inputProps === undefined ? {} : _props$inputProps,
+          placeholder = _props.placeholder,
+          _props$renderSuggesti = _props.renderSuggestion,
+          renderSuggestion = _props$renderSuggesti === undefined ? this.renderSuggestion : _props$renderSuggesti,
+          rest = _objectWithoutProperties(_props, ['full', 'large', 'theme', 'suggestions', 'getSuggestions', 'getSuggestionValue', 'onSuggestionSelected', 'onChangeHandler', 'onSuggestionsFetchRequested', 'onSuggestionsClearRequested', 'shouldRenderSuggestions', 'inputProps', 'placeholder', 'renderSuggestion']);
 
       var defaultInputProps = _extends({}, inputProps, {
         full: full,

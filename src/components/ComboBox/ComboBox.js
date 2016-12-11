@@ -47,7 +47,7 @@ class ComboBox extends Component {
   theme = {
     container: 'topcoat-combobox__container',
     containerOpen: 'topcoat-combobox__container--open',
-    input: 'topcoat-text-input',
+    input: 'topcoat-combobox__select',
     suggestionsContainer: 'topcoat-combobox__suggestions-container',
     suggestionsList: 'topcoat-list__container',
     suggestion: 'topcoat-list__item',
@@ -63,8 +63,7 @@ class ComboBox extends Component {
   render() {
     const { value, suggestionsState } = this.state;
     const inputClassNames = classNames({
-      'topcoat-text-input': !this.props.large,
-      'topcoat-text-input--large': this.props.large,
+      'topcoat-combobox__select': true,
       full: !!this.props.full,
     });
     const {
@@ -123,4 +122,3 @@ class ComboBox extends Component {
 ComboBox.displayName = 'ComboBox';
 
 export default ComboBox;
-
