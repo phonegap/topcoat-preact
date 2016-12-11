@@ -3,6 +3,8 @@ import { storiesOf } from '@kadira/storybook';
 
 import { NavigationBar, NavigationBarItem, NavigationBarTitle } from '../';
 
+import 'adobe-mobile-ui/css/navigation-bar-mobile.css';
+
 storiesOf('NavigationBar', module)
   .addWithInfo('default', () => (
     <NavigationBar>
@@ -30,13 +32,6 @@ storiesOf('NavigationBar', module)
     <NavigationBar>
       <NavigationBarItem full center>
         <NavigationBarTitle>Full Centered Title</NavigationBarTitle>
-      </NavigationBarItem>
-    </NavigationBar>
-  ))
-  .addWithInfo('not centred', () => (
-    <NavigationBar>
-      <NavigationBarItem full>
-        <NavigationBarTitle>Full Not Centered Title</NavigationBarTitle>
       </NavigationBarItem>
     </NavigationBar>
   ))

@@ -2,15 +2,10 @@ import { h } from 'preact';
 import classNames from 'classnames';
 
 const NavigationBarItem = (props) => {
-  const { full = false, center = false, left = false, right = false,
-    half = false, quarter = false, ...rest } = props;
+  const { left = false, right = false, ...rest } = props;
   const cx = classNames({
-    full,
-    center,
-    left,
-    half,
-    quarter,
-    right,
+    'topcoat-left': left,
+    'topcoat-right': right,
     'topcoat-navigation-bar__item': true,
   });
   return (

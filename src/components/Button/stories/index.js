@@ -5,7 +5,6 @@ import Button from '../';
 
 import 'adobe-mobile-ui/css/button-mobile.css';
 
-
 storiesOf('Button', module)
   .addWithInfo('text', () => (
     <Button>Button</Button>
