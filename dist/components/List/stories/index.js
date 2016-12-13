@@ -6,6 +6,8 @@ var _storybook = require('@kadira/storybook');
 
 var _ = require('../');
 
+require('adobe-mobile-ui/css/list-mobile.css');
+
 (0, _storybook.storiesOf)('List', module).addWithInfo('default', function () {
   return (0, _preact.h)(
     _.List,

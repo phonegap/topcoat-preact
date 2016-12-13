@@ -3,6 +3,8 @@ import { action, storiesOf } from '@kadira/storybook';
 
 import { List, ListContainer, ListHeader, ListItem } from '../';
 
+import 'adobe-mobile-ui/css/list-mobile.css';
+
 storiesOf('List', module)
   .addWithInfo('default', () => (
     <List>
