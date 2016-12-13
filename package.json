@@ -19,7 +19,7 @@
   "devDependencies": {
     "@kadira/react-storybook-addon-info": "^3.1.1",
     "@kadira/storybook": "^1.39.0",
-    "adobe-mobile-ui": "^0.5.0",
+    "adobe-mobile-ui": "^0.5.1",
     "babel-cli": "^6.11.4",
     "babel-core": "^6.11.4",
     "babel-eslint": "^6.1.2",
