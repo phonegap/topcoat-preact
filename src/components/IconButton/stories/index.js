@@ -1,9 +1,11 @@
 import { h } from 'preact';
 import { storiesOf } from '@kadira/storybook';
 
+import 'adobe-mobile-ui/css/icon-button-mobile.css';
+
 import IconButton from '../';
 // @TODO this is all a mess -- need a beter way to do IconButtons
-import Icon from 'babel!svg-react!./hamburger_dark.svg?name=HamburgerIcon';
+import Icon from '-!babel!svg-react!./settings.svg';
 import iconPNG from 'base64!./checkbox_checked_dark.png';
 
 storiesOf('IconButton', module)
@@ -14,8 +16,12 @@ storiesOf('IconButton', module)
     <IconButton className="yadda" />
   ))
   .addWithInfo('with an svg', () => (
-    <IconButton><Icon /></IconButton>
+    <IconButton>
+      <svg className="topcoat-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 22" enable-background="new 0 0 22 22">
+        <path className="st0" d="M20 9.4h-1.5c-.1 0-.2-.1-.2-.2-.2-.7-.5-1.4-.8-2-.1-.1 0-.2 0-.3l1.1-1.1c.4-.4.4-1 0-1.4l-.9-.9c-.4-.4-1-.4-1.4 0l-1.1 1.1c-.1.1-.2.1-.3 0-.6-.4-1.3-.7-2-.8-.1 0-.2-.1-.2-.2v-1.6c0-.6-.4-1-1-1h-1.3c-.6 0-1 .4-1 1v1.5c0 .1-.1.2-.2.2-.7.2-1.4.5-2 .8-.1.1-.2 0-.3 0l-1.1-1c-.4-.4-1-.4-1.4 0l-.9.9c-.4.4-.4 1 0 1.4l1.1 1.1c.1.1.1.2 0 .3-.4.6-.7 1.3-.8 2 0 .1-.1.2-.2.2h-1.6c-.6 0-1 .4-1 1v1.3c0 .6.4 1 1 1h1.5c.1 0 .2.1.2.2.2.7.5 1.4.8 2 .1.1 0 .2 0 .3l-1.1 1.1c-.4.4-.4 1 0 1.4l.9.9c.4.4 1 .4 1.4 0l1.1-1.1c.1-.1.2-.1.3 0 .6.4 1.3.7 2 .8.1 0 .2.1.2.2v1.5c0 .6.4 1 1 1h1.3c.6 0 1-.4 1-1v-1.5c0-.1.1-.2.2-.2.7-.2 1.4-.5 2-.8.1-.1.2 0 .3 0l1.1 1.1c.4.4 1 .4 1.4 0l.9-.9c.4-.4.4-1 0-1.4l-1.1-1.1c-.1-.1-.1-.2 0-.3.4-.6.7-1.3.8-2 0-.1.1-.2.2-.2h1.6c.6 0 1-.4 1-1v-1.3c0-.6-.4-1-1-1zm-9 5.3c-2.1 0-3.8-1.7-3.8-3.8 0-2.1 1.7-3.7 3.8-3.7 2.1 0 3.8 1.7 3.8 3.7 0 2.2-1.7 3.8-3.8 3.8z" />
+      </svg>
+    </IconButton>
   ))
   .addWithInfo('with a png', () => (
-    <IconButton><img src={ `data:image/png;base64,${iconPNG}` } alt="icon" /></IconButton>
+    <IconButton><img className="topcoat-icon" src={ `data:image/png;base64,${iconPNG}` } alt="icon" /></IconButton>
   ));
